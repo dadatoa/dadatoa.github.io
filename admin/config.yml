@@ -1,0 +1,28 @@
+# config.yml
+
+backend:
+  name: github
+  repo: dadatoa/dadatoa.github.io
+  branch: gh-pages
+
+media_folder: static/images/uploads
+
+# Publish mode
+publish_mode: editorial_workflow
+
+collections:
+  # Blog
+  - name: "blog"
+    label: "Post"
+    folder: "_posts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint:"" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
+      - { label: "Description", name: "description", widget: "string" }
+      - {label: "Tags", name: "tags", widget: "list"}
+      - { label: "Body", name: "body", widget: "markdown" }
