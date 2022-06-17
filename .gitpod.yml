@@ -1,3 +1,4 @@
-image: ruby
+image: 
+  file: .gitpod.Dockerfile
 tasks:
-- before: bundle install
+- command: bundle exec jekyll serve --watch
