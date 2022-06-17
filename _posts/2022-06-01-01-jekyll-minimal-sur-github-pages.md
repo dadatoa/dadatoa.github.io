@@ -1,13 +1,13 @@
 ---
-title: "1. Jekyll minimal sur Github Pages"
+title: "01. Jekyll minimal sur Github Pages"
 layout: post
 description: "Quelques étapes pour créer un site github pages ultre minimaliste et ultra vite en utilisant les fonctionnalités de Jekyll fourni par Github Pages."
 ---
-## 1. Créer le dépôt
+## Etape 1: Créer le dépôt
 
 Le nom du dépôt importe peu. L'adresse du site aura la forme : pseudo.github.io/nom-du-repo. Si le nom de ton dépôt est pseudo.github.io, ton site sera disponible directement à l'adresse `https://pseudo.github.io`.
 
-## 2. Les premiers fichiers
+## Etape 2: Créer les premiers fichiers
 
 ### _config.yml
 
@@ -55,7 +55,7 @@ layout: post
 
 Evidemment tu peux en mettre plus. Ensuite tu rédige ton post. Inutile de mettre un titre de prmier niveau: le layout post du thème minima affichera le `title` dans un `h1` pour chaque page affichant un post.
 
-## 3. Configurer Github page
+## Etape 3: Configurer Github page
 
 Pour envoyer tes fichiers, je te fais pas de topo: soit tu édite direct sur Github, jusqu'ici c'est pas trop embêtant, soit tu crée tes fichiers en local et tu pousse tout vers Github, c'est comme ça que je préfère faire. Tu peux aussi utiliser un éditeur en ligne connecté à Github, avec Vscode en ligne ou son appli Chrome, j'ai testé, c'est pas mal! Par contre y'a pas de terminal, il faut utiliser les outils graphiques de VSCode pour ajouter/commit/pousser les modif qu'on apporte au dossier/repository.
 
