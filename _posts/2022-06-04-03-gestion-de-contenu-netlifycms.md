@@ -2,6 +2,7 @@
 title: "03. gestion de contenus : Netlify-cms" 
 layout: post
 descritpiton: "Netlify-cms est un outil open-source qui permet de gérer le contenu des générateurs de sites statiques. Il se connecte au dépôt (par exemple Github), permet d'éditer / créer / suprimer des fichier markdown ou des entrées dans des fichiers yaml."
+source: https://cnly.github.io/2018/04/14/just-3-steps-adding-netlify-cms-to-existing-github-pages-site-within-10-minutes.html
 ---
 
 ## Etape 1: créer une app Github Oauth
