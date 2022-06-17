@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-Title: "about"
+title: "about"
 ---
 Bienvenue sur mon blog test Jekyll.
 

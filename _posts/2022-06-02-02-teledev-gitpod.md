@@ -1,18 +1,18 @@
 ---
-title: "2. Télétrav-dev: Gitpod"
+title: "02. Télétrav-dev: Gitpod"
 layout: post
-descritption: "Rien à voir avec Jekyll... mais plus avec Github. Gitpod est un outil cool qui permet de coder avec un VSCode dans un navigateur, qui possède un terminal et qui technique tourne dans un container Docker. Si tu connais pas Docker, renseigne-toi, mais en attendant et en simplifiant fort, le principe c'est de te permettre de travailler comme si t'avais une machine virtuelle, sans avoir à installer de machine virtuelle."
+description: "Rien à voir avec Jekyll... mais plus avec Github. Gitpod est un outil cool qui permet de coder avec un VSCode dans un navigateur, qui possède un terminal et qui technique tourne dans un container Docker. Si tu connais pas Docker, renseigne-toi, mais en attendant et en simplifiant fort, le principe c'est de te permettre de travailler comme si t'avais une machine virtuelle, sans avoir à installer de machine virtuelle."
 --- 
 
-## 1. créer un compte
+## Etape 1: créer un compte
 
 Je perds pas de temps, direction [Gitpod](https://gitpod.io) et je me connect avec Github directement. Ça marche aussi avec Gitlab ou BitBucket.
 
-## 2. Créer un workspace
+## Etape 2: Créer un workspace
 
 Y'a un gros bouton new workspace... go. Normalement, il reconnais la technologie utilisée, mais là comme y'a pas grand chose dans mon repo, il fait riend e spécial, mais j'ai quand même accès à mon dépôt, sur sa branch pricipale, avec un terminal. Pur forcer le lancement de la configuration de *Gitpod*, je lance dans le terminal la commande `gp init`. J'avais bon espoir, mais ça crée juste un fichier de config `gitpod.io` avec des commandes de base, mais comme il voit pas quelles technos sont utilisées, c'est des commande qui font rien de spécial. J'ai une idée, je vais installer jekyll dans *Gitpod*.
 
-## 3. Installer Jekyll
+## Etape 3: Installer Jekyll
 
 J'installe Jekyll sur mon container dans lequel tourne mon *Workspace Gitpod*. Go la [documentation oficielle](https://jekyllrb/docs/installation/) et je suis les consigne pour une installation sous Debian Linux. *En effet, Gitpod a un peu de mal avec les autres distributions, dans les container tourne en général avec Debian ou une distro dérivée (genre Ubuntu).*
 
@@ -29,7 +29,7 @@ Puis Jekyll en vrai:
 gitpod:$ gem install jekyll bundler
 ```
 
-## 4. Initialiser Jekyll dans mon repo
+## Etape 4: Initialiser Jekyll dans mon repo
 
 C'est une étape qui est un peu différente de ce qu'on trouve dans la doc officielle : comme on construit le site de zero, il y a des trucs à faire en plus mais c'est pas méchant. On va d'abord générer les fichier qui sont normalement produit au départ par la commande `jekyll new mon-super-site`:
 
@@ -49,7 +49,7 @@ Maintenant je lance un `bundle install` dans le terminal pour m'assurer que tout
 
 Et avant de faire le commit et d'envoyer le push, je me rends compte qu'il y a un autre fichier que j'ai oublié: le `.gitignore`. J'y remédie tout de suite (note qu'il y a un modèle de `.gitignore` pour *Jekyll/Github Pages* dans les gitignore par défaut disponibles à la création du dépôt sur Github - j'ai zappé, j'ai été con). Je peux maintenant envoyer mes modifications sur mon dépôt *Github*.
 
-## 5. relancer la config de Gitpod
+## Etape 5: Etape 2... Relancer la config de Gitpod
 
 ### Image personnalisée
 
