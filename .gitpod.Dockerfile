@@ -1,4 +1,4 @@
-FROM okteto/ruby
+FROM ruby
 
 RUN gem install --force bundler
 RUN gem install jekyll jekyll-feed webrick jekyll-seo-tag rexml minima
