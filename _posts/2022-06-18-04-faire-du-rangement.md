@@ -38,7 +38,7 @@ Je peux même aller plus loin grace aux collections : je peux spécifier une col
 
 ## Bonus: J'affine les réglages de mon _config.yml
 
-Tant que j'y suis, je vais modifier quelques trucs dans la configuration de mon site. Je jette un oeil au dépôt *Github* de minima pour avoir la documentation d'abord. Attention, je suis sur Github Pages, le je ne suis pas sur la dernière version de minima 3.X, mais sur une 2.X. Certaines options diffèrent un peu, voilà à quoi ressemble mon `_config.yml`:
+Tant que j'y suis, je vais modifier quelques trucs dans la configuration de mon site. Je jette un oeil au dépôt *Github* de minima pour avoir la documentation d'abord. Attention, je suis sur *Github Pages*, du coup je ne suis pas sur la dernière version de minima 3.X, mais sur une 2.X. Certaines options diffèrent un peu, voilà à quoi ressemble mon `_config.yml`:
 
 ```yaml
 title: "dadatoa.github.io"
