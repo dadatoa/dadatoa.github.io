@@ -21,8 +21,8 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string", hint:"" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Last update", name: "update", default: "", widget: "datetime"}
+      - { label: "Original Date", name: "original_date", widget: "datetime" }
+      - { label: "Publish Date", name: "date", widget: "datetime"}
       - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list"}
