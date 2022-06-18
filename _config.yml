@@ -1,3 +1,7 @@
 title: "dadatoa.github.io"
 description: "mon site/blog de test Jekyll/Github Pages. J'utilise le thème minima fourni par défaut avec Github Pages"
+
+# decommenter la ligne source pour que jekyll ne compile le site qu'à partir du contenu du dossier spécifié
+# source: dossier/ 
+
 theme: minima
