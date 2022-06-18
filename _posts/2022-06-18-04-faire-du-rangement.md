@@ -1,6 +1,7 @@
 ---
 title: 04. Faire du rangement
 original_date: 2022-06-08T14:13:52.693Z
+update: ""
 date: 2022-06-08T14:13:52.720Z
 layout: post
 description: "Mon projet commence à grossir tranquillement. L'utilisation de
