@@ -1,7 +1,27 @@
 title: "dadatoa.github.io"
+
 description: "mon site/blog de test Jekyll/Github Pages. J'utilise le thème minima fourni par défaut avec Github Pages"
+
+theme: minima
+
+plugins:
+  - jekyll-seo-tag # 
+  - jemoji #
 
 # decommenter la ligne source pour que jekyll ne compile le site qu'à partir du contenu du dossier spécifié
 # source: dossier/ 
 
-theme: minima
+# exclude : contient tout les fichier non nécessaire à Jekyll pour éviter qu'ils ne soient copier ds le repertoire de deploy
+exclude : [
+  .jekyll-cache,
+  .gitignore,
+  .gitpod.Dockerfile,
+  .gitpod.yml,
+  docker-compose.yml,
+  Gemfile,
+  Gemfile.lock,
+  ]
+
+# disable_disk_cache: BOOL - évite la création d'un repertoire de cache type .jekyll-cache
+disable_disk_cache: true
+
