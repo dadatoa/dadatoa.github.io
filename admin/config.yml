@@ -22,6 +22,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", hint:"" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Last update", name: "date", default: "", widget: "datetime"}
       - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list"}
