@@ -34,11 +34,11 @@ C'est un peu fastifdieux, je doit lister tous les fichiers à exclure, mais ça 
 
 Par défaut, tout les fichiers `markdown` qui ont un *Front Matter*, ainsi que toutes les pages `html` sont considérées par *Jekyll* comme des pages. Rien n'empêche de toutes les regrouper au même endroit dans un dossier page, à l'exception de la page `index.md` cependant.
 
-Je peux même aller plus loin grace aux collections : je peux spécifier une collection *page* dans le `_config.yml `qui contiendra toutes les pages de mon site. Ce faisant, je peux aussi différencier les types de pages, créer une collection blog différente de la collection posts, voir réinitialiser les réglages de la collections posts par défaut.
+Je peux même aller plus loin grace aux collections : je peux spécifier une collection *page* dans le `_config.yml`qui contiendra toutes les pages de mon site. Ce faisant, je peux aussi différencier les types de pages, créer une collection blog différente de la collection posts, voir réinitialiser les réglages de la collections posts par défaut.
 
 ## Bonus: J'affine les réglages de mon _config.yml
 
-Tant que j'y suis, je vais modifier quelques trucs dans la configuration de mon site. Je jette un oeil au dépôt *Github* de minima pour avoir la documentation d'abord. Attention, je suis sur Github Pages, le je ne suis pas sur la dernière version de minima 3.X, mais sur une 2.X. certaines options diffèrent un peu:
+Tant que j'y suis, je vais modifier quelques trucs dans la configuration de mon site. Je jette un oeil au dépôt *Github* de minima pour avoir la documentation d'abord. Attention, je suis sur Github Pages, le je ne suis pas sur la dernière version de minima 3.X, mais sur une 2.X. Certaines options diffèrent un peu, voilà à quoi ressemble mon `_config.yml`:
 
 ```yaml
 title: "dadatoa.github.io"
@@ -74,5 +74,6 @@ exclude : [
 
 # disable_disk_cache: BOOL - évite la création d'un repertoire de cache type .jekyll-cache
 disable_disk_cache: true
-
 ```
+
+Y'a pas grand chose à dire. J'ai ajouté une ligne pour éviter la génération d'un répertoire de cache à chaque génération de site, ça économise un peu de place. J'ai aussi ajouté quelques plugins. Pour les plugins, tout n'est pas possible sur Github Pages. Il y a une liste de plugins pré-installés par défaut sur la page [About Github Pages and Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) disponnible sur *Github*. Par ailleurs, on pourra trouver l'ensemble de plugins utilisables sur Github Pages sur la page [Dependency versions](https://pages.github.com/versions/) fournie par la plateforme.
