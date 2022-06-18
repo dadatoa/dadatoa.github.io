@@ -1,6 +1,7 @@
 ---
 title: 01. Jekyll minimal sur Github Pages
 original_date: 2022-06-01T09:21:01.069Z
+update: ""
 date: 2022-06-01T09:21:01.108Z
 layout: post
 description: Quelques étapes pour créer un site github pages ultre minimaliste
