@@ -1,6 +1,7 @@
 ---
 title: "02. Télétrav-dev: Gitpod"
 original_date: 2022-06-02T09:22:09.885Z
+update: ""
 date: 2022-06-02T09:22:09.901Z
 layout: post
 description: Rien à voir avec Jekyll... mais plus avec Github. Gitpod est un
