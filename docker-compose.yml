@@ -1,6 +1,6 @@
 services:
   jekyll:
-    image: jekyll/jekyll:latest
+    image: gitpod/ghpages
     command: jekyll serve --watch --drafts --verbose
     ports:
       - 4000:4000
