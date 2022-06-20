@@ -145,4 +145,4 @@ J'utilise l'image `caddy`, je redirige le 80 de container sur le 8080 de ma mach
 
 ## Conclusion
 
-J'ai maintenant un système qui me permet d'avoir un environnement similaire à Github Pages, mais en local, et sur Gitpod si je viens à développer à distance sans ma machine. Je peux visiter mon site localement à l'adresse `http://localhost:8080` mais sur mon environement Gitpod ça restera sur le port 4000. Après tu peux modifier les ports si tu le souhaites.
+J'ai maintenant un système qui me permet d'avoir un environnement similaire à *Github Pages*, mais en local, et sur *Gitpod* si je viens à développer à distance sans ma machine. Je peux visiter mon site localement à l'adresse `http://localhost:8080` mais sur mon environnement *Gitpod* ça restera sur le port 4000. Après tu peux modifier les ports si tu le souhaites.
