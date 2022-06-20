@@ -1,5 +1,5 @@
 ---
-title: Mise à jour de ma config Gitpod
+title: Mise à jour de la config Gitpod
 update: ""
 date: 2022-06-20T10:05:50.944Z
 layout: post
@@ -54,7 +54,7 @@ RUN rm -rf /var/lib/apt-lists/* /tmp/* /var/tmp/*
 
 ### Finaliser la configuration du Dockerfile
 
-Enfin, je configure mon environnement Docker pour pouvoir utiliser le serveur de développement et persister les fichiers Jekyll. Ça ne change pas par rapport à ce que j'avais précédemment. Voilà la tête de mon Dockerfile une fois fini :
+Enfin, je configure mon environnement Docker pour pouvoir utiliser le serveur de développement et persister les fichiers *Jekyll*. Ça ne change pas par rapport à ce que j'avais précédemment. Voilà la tête de mon *Dockerfile* une fois fini :
 
 ```dockerfile
 FROM debian:bookworm-slim
@@ -121,7 +121,7 @@ Tout le reste du fichier n'a pas bougé.
 
 J'avais un problème principal : je ne suis pas un spécialiste des images Docker, et je n'arrivais pas, avec cette configuration, à utiliser Docker Compose comme avec l'image `jekyll/jekyll` officielle pour lancer mon serveur de développement en local. J'avais aussi un problème secondaire : avec les dernières versions de Ruby, le serveur *Webrick* utilisé par *Jekyll* comme serveur de développement n'est pas installé par défaut. Il faut donc l'ajouter avec un *Gem* ou l'ajouter au `Gemfile` avec *Bundler*. La solution que j'ai trouvé : utiliser un serveur externe. en fait c'est à ça que sert Docker-Compose, à lance plusieurs services dans des images différentes. J'utilise le serveur Caddy et son image officielle: elle pèse 45 mo. Je n'ai pas besoin de faire attention à la distribution sur laquelle est basée le serveur, je ne m'en servirais pas avec *Gitpod*, pour l'instant je continue à utiliser le serveur de Développement de *Jekyll* qui de toutes façons est installé dans les dépendances du *Gem* `github-pages`. 
 
-Dans mon `docker-compose.yml`, je modifie la commande du service jekyll: je ne veux plus lancer le serveur, je veux simplement que le service surveille et relance un build à chaque modification. Je rajoute également un service `server`  pour lancer mon serveur *Caddy*:
+Dans mon `docker-compose.yml`, je modifie la commande du service `jekyll`: je ne veux plus lancer le serveur, je veux simplement que le service surveille et relance un build à chaque modification. Je rajoute également un service `server`  pour lancer mon serveur *Caddy*:
 
 ```yaml
 services:
@@ -145,4 +145,4 @@ J'utilise l'image `caddy`, je redirige le 80 de container sur le 8080 de ma mach
 
 ## Conclusion
 
-J'ai maintenant un système qui me permet d'avoir un environnement similaire à Github Pages, mais en local, et sur Gitpod si je viens à développer à distance sans ma machine.
+J'ai maintenant un système qui me permet d'avoir un environnement similaire à Github Pages, mais en local, et sur Gitpod si je viens à développer à distance sans ma machine. Je peux visiter mon site localement à l'adresse `http://localhost:8080` mais sur mon environement Gitpod ça restera sur le port 4000. Après tu peux modifier les ports si tu le souhaites.
