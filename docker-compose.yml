@@ -1,8 +1,13 @@
 services:
   jekyll:
-    image: gitpod/ghpages
-    command: jekyll serve --watch --drafts --verbose
-    ports:
-      - 4000:4000
+    image: gitpod/ghpages # mon image perso github-pages cf -> repo dockerfiles
+    command: jekyll build --watch --verbose
     volumes:
       - .:/srv/jekyll
+    
+  server:
+    image: caddy
+    ports:
+      - 8080:80
+    volumes:
+      - ./_site:/usr/share/caddy
