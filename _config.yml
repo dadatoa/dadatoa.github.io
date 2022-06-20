@@ -2,6 +2,8 @@ title: "dadatoa.github.io"
 
 description: "mon site/blog de test Jekyll/Github Pages. J'utilise le thème minima fourni par défaut avec Github Pages"
 
+show_excerpts: true
+
 theme: minima
 
 github_username: dadatoa

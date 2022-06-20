@@ -3,12 +3,10 @@ title: Mise à jour de la config Gitpod
 update: ""
 date: 2022-06-20T10:05:50.944Z
 layout: post
-description: "J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un
-  peu moins lourde, toujours basée sur Debian, sauf que maintnant, je pars d'une
-  image Bookworm Slim. Ça fait un peu plus de trucs à installer, mais je gagne
-  un peu d'espace, et je resouds au passage un problème que j'avais en local."
 ---
-J'ai mis à jour mon *Dockerfile Gitpod* : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars d'une image *Bookworm Slim*. Ça fait un peu plus de trucs à installer, mais je gagne un peu d'espace, et je résous au passage un problème que j'avais en local. En plus, ma nouvelle image me permet d'avoir la même configuration de *Jekyll* localement (et sur *Gitpod*) que sur *Github Pages*.
+J'ai mis à jour mon *Dockerfile Gitpod* : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars d'une image *Bookworm Slim*. 
+
+Ça fait un peu plus de trucs à installer, mais je gagne un peu d'espace, et je résous au passage un problème que j'avais en local. En plus, ma nouvelle image me permet d'avoir la même configuration de *Jekyll* localement (et sur *Gitpod*) que sur *Github Pages*.
 
 ## 1. Changer d'image et adapter la configuration
 
@@ -33,7 +31,7 @@ RUN apt-get install ruby-dev \
 
 Précision : la commande `RUN echo "APT::Get::Assume-Yes "true";" >> /etc/apt/apt.conf.d/90forceyes` me permet de répondre Yes automatiquement lorsque `apt` me demande des trucs. Sans ça, il faut que je prcise un `-y` par exemple à chaque `apt-get install` sinon la construction de l'image plante puisqu'elle n'est pas prévu interagir avec un utilisateur. Et je n'oublie pas d'installer *git* également, sans quoi je vais galérer à pousser mes modifs dans *Github* depuis *Gitpod*.
 
-### Ajouter les dépendance Github Pages et faire du ménage
+### Ajouter les dépendances Github Pages et faire du ménage
 
 *Github Pages* utilise une version de *Jekyll* qui n'est pas la dernière, un nombre limité de plugins, qui ne sont pas toujours eux non plus dans leur dernière version. Enfin, le thème par défaut *Minima* est en version 2.5 dans *Github Pages* alors qu'il en est à sa 3.X au moment ou j'écris ce poste. Heureusement, il existe un *Gem* `github-pages` qui permet d'installer la totalité des éléments nécessaire et des dépendances qui font tourner *Github Pages*, avec les versions utilisées par la plateforme. C'est très pratique. 
 
