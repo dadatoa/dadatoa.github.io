@@ -1,7 +1,25 @@
-FROM ruby
+FROM debian:bookworm-slim
 
-RUN gem install --force bundler
-RUN gem install jekyll jekyll-feed webrick jekyll-seo-tag rexml minima
+RUN echo "APT::Get::Assume-Yes "true";" >> /etc/apt/apt.conf.d/90forceyes
+
+RUN apt-get update
+RUN apt-get install build-essential
+RUN apt-get install ruby \
+    ruby-dev \
+    ruby-execjs \
+    ruby-pygments.rb \
+    locales 
+
+
+RUN gem install github-pages && apt-get purge -y -q --autoremove \
+    gcc \
+    g++ \
+    make \
+    libc-dev \
+    ruby-dev
+
+RUN apt-get clean
+RUN rm -rf /var/lib/apt-lists/* /tmp/* /var/tmp/*
 
 WORKDIR /srv/jekyll
 VOLUME  /srv/jekyll
