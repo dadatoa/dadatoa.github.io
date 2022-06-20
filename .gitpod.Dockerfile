@@ -6,10 +6,7 @@ RUN apt-get update
 RUN apt-get install build-essential
 RUN apt-get install ruby \
     ruby-dev \
-    ruby-execjs \
-    ruby-pygments.rb \
-    locales 
-
+    git 
 
 RUN gem install github-pages && apt-get purge -y -q --autoremove \
     gcc \
