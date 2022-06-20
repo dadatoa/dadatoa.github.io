@@ -4,6 +4,8 @@ description: "mon site/blog de test Jekyll/Github Pages. J'utilise le thème min
 
 theme: minima
 
+github_username: dadatoa
+
 plugins:
   - jekyll-seo-tag # 
   - jemoji #

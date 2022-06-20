@@ -1,5 +1,5 @@
 ---
-title: 01. Jekyll minimal sur Github Pages
+title: "01. Jekyll minimal sur Github Pages"
 update: ""
 date: 2022-06-01T09:21:01.108Z
 layout: post
