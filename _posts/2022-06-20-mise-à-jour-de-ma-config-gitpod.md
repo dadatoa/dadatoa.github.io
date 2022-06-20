@@ -50,8 +50,6 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt-lists/* /tmp/* /var/tmp/*
 ```
 
-
-
 ### Finaliser la configuration du Dockerfile
 
 Enfin, je configure mon environnement Docker pour pouvoir utiliser le serveur de développement et persister les fichiers Jekyll. Ça ne change pas par rapport à ce que j'avais précédemment. Voilà la tête de mon Dockerfile une fois fini :
@@ -88,4 +86,29 @@ EXPOSE 4000
 
 ## 2. La configuration de Gitpod
 
-Étant donné que mon environnement a vocation à être relativement figé, et devant coller au mieux à la configuration de Github Pages, je n'ai pas besoin de gérer automatiquement les dépendances. Je n'ai donc pas installé *Bundler*, et ce faisant, la commande `bundle exec jekyll serve` présente dans mon fichier `gitpod.yml` plante.
+Étant donné que mon environnement a vocation à être relativement figé, et devant coller au mieux à la configuration de Github Pages, je n'ai pas besoin de gérer automatiquement les dépendances. Je n'ai donc pas installé *Bundler*, et ce faisant, la commande `bundle exec jekyll serve` présente dans mon fichier `.gitpod.yml` plante. Là ce n'est pas très compliqué, je me contente de ne plus utilisé *Bundler*, j'ai juste besoin d'enlever le `bundle exec` :
+
+```yaml
+image: 
+  file: .gitpod.Dockerfile
+
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
+    # enable for all branches in this repo (defaults to false)
+    branches: true
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: true
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to true)
+    addComment: true
+    # add a "Review in Gitpod" button to pull requests (defaults to false)
+    addBadge: false
+    # add a label once the prebuild is ready to pull requests (defaults to false)
+    addLabel: prebuilt-in-gitpod
+
+tasks:
+  - command: jekyll serve --watch # remplace bundle exec jekyll serve --watch
+```
