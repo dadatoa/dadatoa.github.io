@@ -8,7 +8,7 @@ description: "J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un
   image Bookworm Slim. Ça fait un peu plus de trucs à installer, mais je gagne
   un peu d'espace, et je resouds au passage un problème que j'avais en local."
 ---
-J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintnant, je pars d'une image Bookworm Slim. Ça fait un peu plus de trucs à installer, mais je gagne un peu d'espace, et je resouds au passage un problème que j'avais en local. En plus, ma nouvelle image me permet d'avoir la même configuration de Jekyll localement (et sur Gitpod) que sur Github Pages.
+J'ai mis à jour mon *Dockerfile Gitpod* : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars d'une image *Bookworm Slim*. Ça fait un peu plus de trucs à installer, mais je gagne un peu d'espace, et je résouds au passage un problème que j'avais en local. En plus, ma nouvelle image me permet d'avoir la même configuration de *Jekyll* localement (et sur *Gitpod*) que sur *Github Pages*.
 
 ## 1. Changer d'image et adapter la configuration
 
@@ -35,7 +35,9 @@ Précision : la commande `RUN echo "APT::Get::Assume-Yes "true";" >> /etc/apt/ap
 
 ### Ajouter les dépendance Github Pages et faire du ménage
 
-Il existe un *Gem* `github-pages` qui permet d'installer la totalité des éléments nécessaire et des dépendances qui font tourner *Github Pages*, avec les versions utilisées par la plateforme. C'est très pratique. Une fois que c'est installé, on peu supprimer les paquets de dev qui ne servent qu'à la compilation des *Gems*. Ensuite, je fais un `apt-get purge` et j'efface tous les fichiers d'installations dont je n'ai pas besoin.
+*Github Pages* utilise une version de *Jekyll* qui n'est pas la dernière, un nombre limité de plugins, qui ne sont pas toujours eux non plus dans leur dernière version. Enfin, le thème par défaut *Minima* est en version 2.5 dans *Github Pages* alors qu'il en est à sa 3.X au moment ou j'écris ce poste. Heureusement, il existe un *Gem* `github-pages` qui permet d'installer la totalité des éléments nécessaire et des dépendances qui font tourner *Github Pages*, avec les versions utilisées par la plateforme. C'est très pratique. 
+
+Je vais donc mettre à jour mon Dockerfile en conséquence. Une fois tout est installé, je peux supprimer les paquets de dev qui ne servent qu'à la compilation des *Gems*. Ensuite, je fais un `apt-get purge` et j'efface tous les fichiers d'installations dont je n'ai pas besoin.
 
 ```dockerfile
 ...
