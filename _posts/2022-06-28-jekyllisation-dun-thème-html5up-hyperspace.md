@@ -17,7 +17,7 @@ C'est assez facile à intégrer finalement avec Jekyll. Celui-ci se compose éss
 
 ## 1. Structure
 
-Pour structurer ma landing-page, j'ai décidé de m'appuyer sur un Front Matter assez costaud sur ma page index.md. J'aurais essayé de faire autrement, mais c'est ce qui me semblait le moins chiant à maintenenir. Donc le front Matter contien un objet pour chaque section de la page d'acceuil, avec quelques caractéristiques dont le layout home aura besoin :
+Pour structurer ma landing-page, j'ai décidé de m'appuyer sur un Front Matter assez costaud sur ma page index.md. J'ai essayé de faire autrement, mais c'est ce qui me semblait le moins chiant à maintenenir. Donc le front Matter contient un objet pour chaque section de la page d'acceuil, avec quelques caractéristiques dont le layout home aura besoin :
 
 1. id: correspond à l'id de l'id de la section sur la page d'accueil qui permettra de mettre ne place les anchor links
 2. title : le titre de la section, qui sera repris dans la navigation
@@ -39,4 +39,4 @@ Il s'agit du bloc de contact. J'ai préparé deux templates: un qui reprend stri
 
 ## Conclusion
 
-N'hésite pas à venir faire un tour sur le dépôt, à forker pour tester ou à me laisser un petit message si tu veux m'employer pour te le personnaliser davantage ;).
+Après avoir galéré un peu, mon thème est utilisable avec Jekyll sur Github Pages. Cependant, il n'est pas super adapté pour un blog, plutôt sur un site vitrine de tech. J'ai pas essayé de connecter le formulaire de contact à une API, et je me rend comte que globalement, le thème ne répond pas trop à mes besoins... je vais donc essayer autre chose.
