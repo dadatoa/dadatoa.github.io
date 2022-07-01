@@ -5,7 +5,12 @@ backend:
   repo: dadatoa/dadatoa.github.io
   branch: gh-pages
 
-media_folder: static/images/uploads
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: daz7gamgu
+    api_key: 276326737381514
+# media_folder: static/images/uploads
 
 # Publish mode
 publish_mode: editorial_workflow
