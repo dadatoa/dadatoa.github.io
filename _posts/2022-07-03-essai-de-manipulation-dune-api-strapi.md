@@ -10,6 +10,6 @@ tags:
 ---
 Je vais tenter de déployer strapi sur un mutualisé. D'abord, un docker en local, et ensuite, c'est parti.
 
-## Installation en n click chez l'hébergeur
+## Installation en un click chez l'hébergeur
 
 En réalité, mon hébergeur me propose une install en 1 click de Strapi. J'ai essayé vite fait pour voir, le problème c'est que la config de strapi ne peut se faire qu'en développement. Je vais donc essayer de cloner mon répertoire Strapi chez l'hébergeur en local, en l'initialisant comme un repo Git. Ensuite, je vais me monter des images Docker pour pouvoir reproduire l'environnement de mon hébergeur en local. Pour les images, je veux du Debian car je veux pouvoir les utiliser sans bug sous Gitpod. L'image Docker de Strapi officielle est sous Alpine Linux, pas de bol !
