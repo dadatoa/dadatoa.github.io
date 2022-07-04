@@ -8,6 +8,11 @@ theme: minima
 
 github_username: dadatoa
 
+collections:
+  projets:
+    output: true
+    permalink: /:collection/:title
+
 plugins:
   - jekyll-seo-tag # 
   - jemoji #
