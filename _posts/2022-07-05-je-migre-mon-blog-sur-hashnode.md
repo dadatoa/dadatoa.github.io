@@ -4,7 +4,7 @@ update: 2022-07-05T05:26:05.132Z
 date: 2022-07-05T05:26:05.180Z
 layout: post
 ---
-J'ai décidé de migrer mon blog sur *Hasnode* car ça me permet de gagner un petit peu en visibilité. J'ai choisi *Hashnode* plutôt que *Dev.to* ou Medium principalement parce que son fonctionnement me permet de garder mon blog sur *Github* pages simultanément.
+J'ai décidé de migrer (ou plutôt dupliquer) mon blog sur *Hasnode* car ça me permet de gagner un petit peu en visibilité. J'ai choisi *Hashnode* principalement parce que son fonctionnement me permet de garder mon blog sur *Github* pages simultanément.
 
 ## Je garde mon site Github pages
 
