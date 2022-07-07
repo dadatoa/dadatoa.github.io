@@ -2,8 +2,8 @@ show_excerpts: true
 
 theme: minima
 
-paginate: 5 # ajoute de la pagination (5 posts par pages)
-paginate_path: "/blog/page:num/"
+#paginate: 5 # ajoute de la pagination (5 posts par pages)
+#paginate_path: "/blog/page:num/"
 
 github_username: dadatoa
 
