@@ -1,6 +1,6 @@
 ---
-title: "02. Télétrav-dev: Gitpod"
-update: ""
+title: "Télétrav-dev: Gitpod"
+update: 2022-06-02T09:22:09.901Z
 date: 2022-06-02T09:22:09.901Z
 layout: post
 ---

@@ -1,6 +1,6 @@
 ---
 title: "03. gestion de contenus : Netlify-cms"
-update: ""
+update: 2022-06-04T09:22:40.807Z
 date: 2022-06-04T09:22:40.807Z
 layout: post
 source: https://cnly.github.io/2018/04/14/just-3-steps-adding-netlify-cms-to-existing-github-pages-site-within-10-minutes.html

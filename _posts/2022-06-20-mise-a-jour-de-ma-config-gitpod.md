@@ -1,6 +1,6 @@
 ---
 title: Mise à jour de la config Gitpod
-update: ""
+update: 2022-06-20T10:05:50.944Z 
 date: 2022-06-20T10:05:50.944Z
 layout: post
 ---

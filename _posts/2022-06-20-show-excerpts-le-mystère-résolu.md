@@ -1,6 +1,6 @@
 ---
 title: "show excerpts: le mystère résolu"
-update: ""
+update: 2022-06-21T11:57:25.096Z
 date: 2022-06-21T11:57:25.096Z
 layout: post
 ---
