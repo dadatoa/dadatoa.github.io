@@ -1,6 +1,8 @@
 ---
 title: Faire du rangement
-update: 2022-06-08T14:13:52.720Z
+section: docs
+categories:
+tags: 
 date: 2022-06-08T14:13:52.720Z
 layout: post
 ---

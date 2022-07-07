@@ -8,6 +8,19 @@ show_excerpts: true
 
 theme: minima
 
+collections:
+  sections:
+    output: true
+    permalink: /:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "sections"
+    values:
+      layout: "section"
+
+
 #paginate: 5 # ajoute de la pagination (5 posts par pages)
 #paginate_path: "/blog/page:num/"
 
