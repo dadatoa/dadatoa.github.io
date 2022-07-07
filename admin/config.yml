@@ -3,7 +3,7 @@
 backend:
   name: github
   repo: dadatoa/dadatoa.github.io
-  branch: gh-pages
+  branch: master
 
 media_library:
   name: cloudinary
