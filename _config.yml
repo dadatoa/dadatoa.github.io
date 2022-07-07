@@ -6,16 +6,19 @@ show_excerpts: true
 
 theme: minima
 
+paginate: 5 # ajoute de la pagination (5 posts par pages)
+
 github_username: dadatoa
 
-collections:
-  projets:
-    output: true
-    permalink: /:collection/:title
-
 plugins:
-  - jekyll-seo-tag # 
-  - jemoji #
+  - jekyll-seo-tag # SEO automatique depuis site.description
+  - jemoji # les emoji de github pages
+  - jekyll-github-metadata # personalise title description url et baseurl d'après les données du repo Github si rien n'est spécifié
+  - jekyll-avatar # récupere l'avatar github pour le placer ou on le souhaite sur le site
+  - jekyll-remote-theme
+  - jekyll-mentions
+  - jekyll-include-cache #cache les fichier includes pour améliorer un peu la vitesse de génération du site
+  - jekyll-readme-index # utilise le README du repo comme index du site
 
 # decommenter la ligne source pour que jekyll ne compile le site qu'à partir du contenu du dossier spécifié
 # source: dossier/ 
