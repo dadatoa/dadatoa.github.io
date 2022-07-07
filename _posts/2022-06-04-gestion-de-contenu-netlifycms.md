@@ -1,5 +1,5 @@
 ---
-title: "03. gestion de contenus : Netlify-cms"
+title: "gestion de contenus : Netlify-cms"
 update: 2022-06-04T09:22:40.807Z
 date: 2022-06-04T09:22:40.807Z
 layout: post

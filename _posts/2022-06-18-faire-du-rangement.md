@@ -1,5 +1,5 @@
 ---
-title: 04. Faire du rangement
+title: Faire du rangement
 update: 2022-06-08T14:13:52.720Z
 date: 2022-06-08T14:13:52.720Z
 layout: post
