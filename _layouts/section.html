@@ -5,7 +5,7 @@ layout: page
 {% for post in site.posts %}
 {% if post.section == page.name %}
 <section>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a> | {{ post.section }} | {{ page.name }}
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
 </section>
 {% endif %}
 {% endfor %}
