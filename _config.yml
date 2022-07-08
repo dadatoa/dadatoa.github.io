@@ -1,6 +1,6 @@
-title: github.dadatoa.io
+title: dadatoa.github.io
 
-description : "un beau site"
+description: un beau site
 
 baseurl: ""
 
@@ -29,17 +29,17 @@ defaults:
 github_username: dadatoa
 
 plugins:
-  - jekyll-seo-tag # SEO automatique depuis site.description
+  - jekyll-seo-tag # SEO automatique depuis c######^#title:: un titre: dadatoa.github.ioe.#description
   - jemoji # les emoji de github pages
-  - jekyll-github-metadata # personalise title description url et baseurl d'après les données du repo Github si rien n'est spécifié
-  - jekyll-avatar # récupere l'avatar github pour le placer ou on le souhaite sur le site
+  - jekyll-github-metadata # personalise c######^#title: #description url et #baseurl d'après les données du repo Github si rien n'est spécifié
+  - jekyll-avatar # récupere l'avatar github pour le placer ou on le souhaite sur le c######^#title:: un titre: dadatoa.github.ioe
   - jekyll-remote-theme
   - jekyll-mentions
-  - jekyll-include-cache #cache les fichier includes pour améliorer un peu la vitesse de génération du site
-  - jekyll-readme-index # utilise le README du repo comme index du site
+  - jekyll-include-cache #cache les fichier includes pour améliorer un peu la vitesse de génération du c######^#title:: un titre: dadatoa.github.ioe
+  - jekyll-readme-index # utilise le README du repo comme index du c######^#title:: un titre: dadatoa.github.ioe
   - jekyll-optional-front-matter # rend le frontmatter optionnel -> va chercher layout home puis page puis post par défaut
 
-# decommenter la ligne source pour que jekyll ne compile le site qu'à partir du contenu du dossier spécifié
+# decommenter la ligne source pour que jekyll ne compile le c######^#title:: un titre: dadatoa.github.ioe qu'à partir du contenu du dossier spécifié
 # source: dossier/ 
 
 # exclude : contient tout les fichier non nécessaire à Jekyll pour éviter qu'ils ne soient copier ds le repertoire de deploy
