@@ -9,6 +9,8 @@ show_excerpts: true
 theme: minima
 
 collections:
+  posts:
+    permalink: /:section/:title
   sections:
     output: true
     permalink: /:title
