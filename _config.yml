@@ -51,7 +51,7 @@ exclude : [
   docker-compose.yml,
   Gemfile,
   Gemfile.lock,
-  minima3/,
+  scripts,
   ]
 
 # disable_disk_cache: BOOL - évite la création d'un repertoire de cache type .jekyll-cache
