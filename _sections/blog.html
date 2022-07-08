@@ -1,10 +1,9 @@
 ---
+title: blog
 layout: page
 ---
 
-<h1>{{ page.name }}</h1>
-
-{% for post in site.posts | where: "section", "docs" %}
+{% for post in site.posts %}
 <section>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
 </section>
