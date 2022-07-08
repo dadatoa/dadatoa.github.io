@@ -11,9 +11,9 @@ theme: minima
 collections:
   sections:
     output: true
-    permalink: /:title
+    permalink: /:title/
 posts:
-    permalink: /:title
+    permalink: /:title/
     
 defaults:
   - scope:
