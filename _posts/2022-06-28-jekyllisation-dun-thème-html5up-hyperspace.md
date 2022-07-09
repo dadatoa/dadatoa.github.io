@@ -1,5 +1,5 @@
 ---
-title: "Jekyllisation d'un thème html5up : Hyperspace"
+title: "Jekyllisation d'un thème html5up : Hyperspace toto"
 section: docs
 categories:
 tags:
@@ -12,7 +12,7 @@ J'ai décidé de Jekylliser un thème HTML fourni par [html5up](https://html5up.
 
 C'est assez facile à intégrer finalement avec *Jekyll*. Celui-ci se compose essentiellement d'une *landing-page* et d'une page générique. La *landing-page* contient 4 section : 
 
-* une intro
+* une intro toto
 * une partie avec une liste d'éléments avec une illustration
 * une partie avec une liste d'éléments avec une icône *Font-Awesome*
 * une partie contact
