@@ -1,9 +1,0 @@
-{
-  "actions" : {
-    "build" : {
-      "enabled" : true,
-      "script" : "docker run --name jekyll --rm --volume=\"$PWD:\/srv\/jekyll\" gitpod\/ghpages:ruby2-slim jekyll build --watch"
-    }
-  },
-  "openLogOnRun" : "start"
-}

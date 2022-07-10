@@ -4,11 +4,10 @@ layout: default
 {%- if page.section_name -%}
 <h1 class="page-heading">{{ page.section_name }}</h1>
 {%- endif -%}
-{{ content }} 
+{{ content }}  
 <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {%- for post in site.posts -%}
-    {% if post.section == page.section_name %}
     <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -16,7 +15,6 @@ layout: default
           {{ post.excerpt | truncated: 50 }}
         {%- endif -%}
     </li>
-    {% endif %}
     {% endfor %}   
 </ul>
 

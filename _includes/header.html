@@ -21,7 +21,7 @@
           {%- for path in sections_paths -%}
             {%- assign my_section = site.sections | where: "path", path | first -%}
             
-            <a class="page-link" href="{{ my_section.url | relative_url }}">{{ my_section.title | escape }}</a>
+            <a class="page-link" href="{{ my_section.url | relative_url }}">{{ my_section.section_name | escape }}</a>
             
           {%- endfor -%}
         </div>

@@ -1,6 +1,6 @@
 ---
-title: "Jekyllisation d'un thème html5up : Hyperspace toto"
-section: docs
+title: "Jekyllisation d'un thème html5up : Hyperspace test"
+section: projets
 categories:
 tags:
 date: 2022-06-28T10:48:54.416Z

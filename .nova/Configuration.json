@@ -1,4 +1,5 @@
 {
+  "workspace.name" : "dadatoa.github.io",
   "workspace.preview_root" : "_site",
-  "workspace.preview_server_allow_external" : true
+  "workspace.preview_server_allow_external" : false
 }

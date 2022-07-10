@@ -12,7 +12,7 @@ collections:
   sections:
     output: true
     permalink: /:title/
-posts:
+    posts:
     permalink: /:title/
     
 defaults:
