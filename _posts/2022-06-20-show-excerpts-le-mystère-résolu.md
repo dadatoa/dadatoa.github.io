@@ -1,6 +1,6 @@
 ---
 title: "show excerpts: le mystère résolu"
-section: ""
+section:
 categories:
 tags:
 date: 2022-06-21T11:57:25.096Z

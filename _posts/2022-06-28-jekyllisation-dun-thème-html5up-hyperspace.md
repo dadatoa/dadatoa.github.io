@@ -1,18 +1,18 @@
 ---
-title: "Jekyllisation d'un thème html5up : Hyperspace"
-section: docs
+title: "Jekyllisation d'un thème html5up : Hyperspace test"
+section: projets
 categories:
 tags:
 date: 2022-06-28T10:48:54.416Z
 layout: post
 ---
-J'ai décidé de Jekylliser un thème HTML fourni par [html5up](https://html5up.net/). Le thème est sous licence Creative Commons Attribution et je le trouve assez sympa. N'hésite pas à faire un tour sur le [dépôt Github](https://github.com/dadatoa/hyperspace-html5up-jekyll) du projet !
+J'ai décidé de Jekylliser un thème HTML fourni par [html5up](https://html5up.net/). Le thème est sous licence Creative Commons Attribution et je le trouve assez sympa. N'hésite pas à faire un tour sur le dépôt Github du projet !
 
 ## Un thème html5
 
 C'est assez facile à intégrer finalement avec *Jekyll*. Celui-ci se compose essentiellement d'une *landing-page* et d'une page générique. La *landing-page* contient 4 section : 
 
-* une intro
+* une intro toto
 * une partie avec une liste d'éléments avec une illustration
 * une partie avec une liste d'éléments avec une icône *Font-Awesome*
 * une partie contact
