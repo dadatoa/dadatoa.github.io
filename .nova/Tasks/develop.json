@@ -1,0 +1,8 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "docker run --name jekyll --rm --volume=\"$PWD:\/srv\/jekyll\" gitpod\/ghpages:ruby2-slim sed -i 's\/^#title:\/title:\/' _config.yml\ndocker run --name jekyll --rm --volume=\"$PWD:\/srv\/jekyll\" gitpod\/ghpages:ruby2-slim sed -i 's\/^#description:\/description:\/' _config.yml\ndocker run --name jekyll --rm --volume=\"$PWD:\/srv\/jekyll\" gitpod\/ghpages:ruby2-slim sed -i 's\/^#baseurl:\/baseurl:\/' _config.yml"
+    }
+  }
+}
