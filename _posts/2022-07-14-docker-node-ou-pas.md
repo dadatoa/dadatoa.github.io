@@ -130,4 +130,24 @@ Enfin le troisième bloc ne te sera utile que si tu héberge ton code sur *Githu
 
 ## Un petit mot sur le workflow
 
-Je cherchais un peu comment j'allais orgnaiser tout ça, étant donné que j'aime encore bien utiliser mon éditeur en local et que je n'i pas besoin dans ce cas là de tout le bordel de Gitpod, et que j'ai envie que mon code soit encore à peu près clean. Ce que je vais faire c'est que je vais créer 1 dépôt à partir de mon dépot node template, que je vais appelé podnode16 en référence à la version de node que j'utilise. Je vais inclure dans ce dépôt tous les projets Node16 que je vais développer, en créant une branche par projet, et en utilisant submodule. Comme ça, je garde une base locale propre, et je n'ai pas besoin de faire des copier/coller dans tous les sens. Il me suffira de switcher d'une branche à l'autre pour changer de projet. En plus, Gitpod permet de créer un worksapce associé à une branche spécifique, donc je peux créer un workspace différent par projet Node.
+Je cherchais un peu comment j'allais organiser tout ça, étant donné que j'aime encore bien utiliser mon éditeur en local et que je n'ai pas besoin dans ce cas là de tout le bordel de Gitpod, et que j'ai envie que mon code soit encore à peu près clean. Ce que je vais faire, c'est que je vais créer 1 dépôt à partir de mon dépôt template Node, que je vais appeler *podnode16* en référence à la version de *NodeJS* que j'utilise. Je vais inclure dans ce dépôt tous les projets Node16 que je vais développer, en créant une branche par projet, et en utilisant submodule. Comme ça, je garde une base locale propre, et je n'ai pas besoin de faire des copier/coller dans tous les sens. Il me suffira de switcher d'une branche à l'autre pour changer de projet. En plus, *Gitpod* permet de créer un *workspace* associé à une branche spécifique, donc je peux créer un *workspace* différent par projet *Node*.
+
+Pour les commandes du .gitpod.yml, qui peuvent varier d'un projet à l'autre, je vais créer 3 scripts:
+
+* `before.sh` qui lancera les commandes à exécuter à l'état before
+* `init.sh` qui lancera les commandes à exécuter à l'état init
+* `command.sh` qui lancera les commandes à exécuter au lancement du *workspace*
+
+Le bloc task du fichier `.gitpod.yml` ressemblera ensuite à ça:
+
+```yaml
+tasks:
+  - before: sh before.sh
+    init: sh init.sh
+    command: sh command.sh
+  - command: echo "lancement d'un terminal"
+  
+
+```
+
+J'ai retiré `name` qui n'est pas indispensable, chaque objet Yaml (les tirets) correspond à un terminal, il est possible de lancer plusieurs terminaux en paralèlle et donc plusieurs commande (j'ai donc ici 2 terminaux). Je lance un premier terminal pour passer d'abord tout ce qui est *prebuild*, puis le script `command.sh` qui comportera les commandes pour démarrer le serveur de développement. C'est la raison pour laquelle je lance un deuxième terminal, ou je pourrai saisir les autres commandes que je souhaite passer à la main.
