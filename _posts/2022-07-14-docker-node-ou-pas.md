@@ -4,7 +4,7 @@ update: 2022-07-14T03:58:03.803Z
 date: 2022-07-14T03:58:03.908Z
 layout: post
 ---
-J'envisage de me lancer dans l'apprentissage de Strapi et de Astro. Les deux projets sont basés sur Node JS, et je me suis naturellement dit que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à trouver de la doc, donc j'ai decidé de tester ça moi même. Sauf qu'en fait, les cas d'usage sont un peu limités...
+J'envisage de me lancer dans l'apprentissage de *Strapi* et de Astro. Les deux projets sont basés sur NodeJS, et je me suis naturellement dit que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à trouver de la doc, donc j'ai decidé de tester ça moi même. Sauf qu'en fait, les cas d'usage sont un peu limités...
 
 ## Pourquoi faire ?
 
