@@ -1,6 +1,6 @@
-#title: dadatoa.github.io
+title: dadatoa.github.io
 
-#description: un beau site
+description: un beau site
 
 #baseurl: ""
 
@@ -30,13 +30,13 @@ github_username: dadatoa
 plugins:
   - jekyll-seo-tag 
   - jemoji 
-  - jekyll-github-metadata 
-  - jekyll-avatar 
-  - jekyll-remote-theme
-  - jekyll-mentions
-  - jekyll-include-cache 
-  - jekyll-readme-index 
-  - jekyll-optional-front-matter 
+  #- jekyll-github-metadata 
+  #- jekyll-avatar 
+  #- jekyll-remote-theme
+  #- jekyll-mentions
+  #- jekyll-include-cache 
+  #- jekyll-readme-index 
+  #- jekyll-optional-front-matter 
 
 # exclude : contient tout les fichier non nécessaire à Jekyll pour éviter qu'ils ne soient copier ds le repertoire de deploy
 exclude : [
