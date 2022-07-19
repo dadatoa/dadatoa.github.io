@@ -4,7 +4,7 @@ update: 2022-07-19T03:55:45.651Z
 date: 2022-07-19T03:55:45.692Z
 layout: post
 ---
-lorem ipsum et patiti et patata
+Un post test avec des images pour voir comment ça fait.
 
 
 
