@@ -49,5 +49,5 @@ collections:
             name: 'items'
             widget: 'list'
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: image, name: image, widget: image }
+              - { label: Toto, name: toto, widget: string }
+              - { label: prout, name: image, widget: image }
