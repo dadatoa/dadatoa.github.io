@@ -13,5 +13,5 @@ github:
 
 tasks:
   - name: test
-    before: bundle init && bundle add github-pages webrick
+    init: bundle init && bundle add github-pages webrick
   
