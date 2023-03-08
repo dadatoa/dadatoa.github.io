@@ -12,5 +12,5 @@ github:
     addLabel: prebuilt-in-gitpod
 
 tasks:
-  - init: gem install jekyll bundler
-  - command: jekyll serve --watch
+  - name: test
+    init: gem install bundler github-pages
