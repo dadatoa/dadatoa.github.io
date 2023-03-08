@@ -13,5 +13,4 @@ github:
 
 tasks:
   - name: test
-    init: bundle install
-    command: bundle exec jekyll serve
+    command: bundle install
