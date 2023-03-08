@@ -13,5 +13,6 @@ github:
 
 tasks:
   - name: test
-    init: bundle init && bundle add github-pages webrick
-  
+    before: bundle init && bundle add github-pages webrick
+    init: bundle install
+    command: bundle exec jekyll serve
