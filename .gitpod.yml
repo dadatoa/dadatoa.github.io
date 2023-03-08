@@ -13,5 +13,5 @@ github:
 
 tasks:
   - name: test
-    init: gem install bundler github-pages
+    init: gem install github-pages
     command: jekyll serve --incremental --watch
