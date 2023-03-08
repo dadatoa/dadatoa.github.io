@@ -13,6 +13,5 @@ github:
 
 tasks:
   - name: test
-    before: gem install github-pages
-    init: bundle init && bundle add github-pages
+    before: bundle init && bundle add github-pages webrick
   
