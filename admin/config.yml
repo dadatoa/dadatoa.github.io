@@ -35,19 +35,5 @@ collections:
       - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
       - { label: "Tags", name: "tags", widget: "list"}
       - { label: "Body", name: "body", widget: "markdown" }
-  # Photos
-  - name: 'images'
-    label: 'Images'
-    editor:
-      preview: false
-    files:
-      - label: 'Photos'
-        name: 'photos'
-        file: '_data/photos.yml'
-        fields:
-          - label: 'Photo Items'
-            name: 'items'
-            widget: 'list'
-            fields:
-              - { label: Toto, name: toto, widget: string }
-              - { label: prout, name: image, widget: image }
+  
+  
