@@ -1,5 +1,9 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "master"
-    ]
+    ],
+    "workbench.preferredLightColorTheme": "Default Light+ Experimental",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Default High Contrast"
 }
