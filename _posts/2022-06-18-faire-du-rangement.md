@@ -4,6 +4,7 @@ section: docs
 categories:
 tags: 
 date: 2022-06-08T14:13:52.720Z
+update: 2022-06-08T14:13:52.720Z 
 layout: post
 ---
 Mon projet commence à grossir tranquillement. L'utilisation de plusieurs outils rend le repo un peu bordélique : y'a plein de fichiers qui n'ont rien à voir avec mon site Jekyll. 

@@ -4,6 +4,7 @@ section: docs
 categories:
 tags:
 date: 2022-06-20T10:05:50.944Z
+update: 2022-06-20T10:05:50.944Z 
 layout: post
 ---
 J'ai mis à jour mon *Dockerfile Gitpod* : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars d'une image *Bookworm Slim*. 

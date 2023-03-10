@@ -8,11 +8,13 @@ layout: default
 <h2>news</h2>
 
 <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in site.posts limit: 5 -%}
+      {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
+      {%- assign posts = site.posts | sort: 'update' | reverse -%}
+      {%- for post in posts limit: 5 -%}
       <li>
           {% if post.section %}<span class="post-meta">{{ post.section }} | </span>{% endif %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span class="post-meta">dernière maj le {{ post.update | date: date_format }} (publication originale le {{ post.date | date: date_format }})
+          </span>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           {%- if site.show_excerpts -%}
             {{ post.excerpt | truncate: 280 }}

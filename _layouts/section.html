@@ -7,10 +7,11 @@ layout: default
 {{ content }} 
 <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    {%- for post in site.posts -%}
+    {%- assign posts = site.posts | sort: 'last_updated' | reverse -%}
+    {%- for post in posts -%}
     {% if post.section == page.section_name %}
     <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">dernière maj le {{ post.update | date: date_format }} (publication originale le {{ post.date | date: date_format }})</span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt | truncated: 50 }}

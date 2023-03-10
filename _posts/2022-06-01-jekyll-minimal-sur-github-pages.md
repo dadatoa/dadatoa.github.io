@@ -3,6 +3,7 @@ title: Jekyll minimal sur Github Pages
 section: docs
 categories:
 tags: 
+update: 2022-06-01T09:21:01.108Z 
 date: 2022-06-01T09:21:01.108Z
 layout: post
 ---

@@ -4,6 +4,7 @@ section: docs
 categories:
 tags:
 date: 2022-06-02T09:22:09.901Z
+update: 2022-06-02T09:22:09.901Z
 layout: post
 ---
 Rien à voir avec Jekyll... mais plus avec Github. Gitpod est un outil cool qui permet de coder avec un VSCode dans un navigateur, qui possède un terminal et qui technique tourne dans un container Docker. 

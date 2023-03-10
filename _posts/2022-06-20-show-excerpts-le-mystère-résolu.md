@@ -4,6 +4,7 @@ section:
 categories:
 tags:
 date: 2022-06-21T11:57:25.096Z
+update: 2022-06-21T11:57:25.096Z 
 layout: post
 ---
 Je n'avais pas pigé à quoi ça servait! C'est chose faite. Si toi aussi tu te demandes:
