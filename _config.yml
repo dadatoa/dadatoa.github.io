@@ -8,6 +8,8 @@ show_excerpts: true
 
 theme: minima
 
+collections_dir: collections
+
 collections:
   sections:
     output: true
