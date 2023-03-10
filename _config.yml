@@ -8,6 +8,10 @@ show_excerpts: true
 
 theme: minima
 
+permalink: /:categories/:title
+
+collections_dir: collections
+
 collections:
   sections:
     output: true

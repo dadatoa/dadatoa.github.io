@@ -6,11 +6,17 @@ layout: default
 {%- endif -%}
 {{ content }} 
 <ul class="post-list">
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    {%- for post in site.posts -%}
-    {% if post.section == page.section_name %}
+    {%- assign date_format_fr = "%-d %b %Y" -%}
+    {%- assign posts = site.posts | sort: 'pubdate' | reverse -%}
+    {%- for post in posts -%}
+    {% if post.category == page.section_name %}
     <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">
+          {{ post.pubdate | date: date_format_fr }}
+          {%- if post.update -%}
+          &nbsp;| originellement publié le {{ post.date | date: date_format_fr }}
+          {%- endif -%}
+        </span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt | truncated: 50 }}
