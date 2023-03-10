@@ -1,10 +1,9 @@
 ---
 title: "Jekyllisation d'un thème html5up : Hyperspace test"
-section: projets
-category: projects
+category: projets
 tags:
-date: 2022-06-28T10:48:54.416Z
-update: 2022-06-28T10:48:54.416Z 
+pubdate: 2022-06-28T10:48:54.416Z
+update: false 
 layout: post
 ---
 J'ai décidé de Jekylliser un thème HTML fourni par [html5up](https://html5up.net/). Le thème est sous licence Creative Commons Attribution et je le trouve assez sympa. N'hésite pas à faire un tour sur le dépôt Github du projet !

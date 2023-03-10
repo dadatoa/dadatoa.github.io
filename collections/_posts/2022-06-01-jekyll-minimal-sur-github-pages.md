@@ -1,10 +1,9 @@
 ---
 title: Jekyll minimal sur Github Pages
-section: docs
 category: docs
 tags: 
-update: 2022-06-01T09:21:01.108Z 
-date: 2022-06-01T09:21:01.108Z
+pubdate: 2022-06-01T09:21:01.108Z 
+update: false
 layout: post
 ---
 Quelques étapes pour créer un site github pages ultre minimaliste et ultra vite en utilisant les fonctionnalités de Jekyll fourni par Github Pages.
