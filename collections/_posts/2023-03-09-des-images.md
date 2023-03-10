@@ -2,6 +2,7 @@
 title: des images
 update: 2023-03-09T04:24:00.906Z
 date: 2023-03-09T04:24:00.912Z
+category: test
 layout: post
 ---
 Un post test avec des images pour voir comment ça fait. Avec une modif de date. et un article dupliqué

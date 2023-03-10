@@ -1,7 +1,7 @@
 ---
 title: "show excerpts: le mystère résolu"
 section:
-categories:
+category: blog
 tags:
 date: 2022-06-21T11:57:25.096Z
 update: 2022-06-21T11:57:25.096Z 

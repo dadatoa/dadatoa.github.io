@@ -1,7 +1,7 @@
 ---
 title: "gestion de contenus : Netlify-cms"
 section: docs
-categories:
+category: documentation
 tags:
 date: 2022-06-04T09:22:40.807Z
 update: 2022-06-04T09:22:40.807Z

@@ -1,7 +1,7 @@
 ---
 title: Faire du rangement
 section: docs
-categories:
+categories: docs
 tags: 
 date: 2022-06-08T14:13:52.720Z
 update: 2022-06-08T14:13:52.720Z 

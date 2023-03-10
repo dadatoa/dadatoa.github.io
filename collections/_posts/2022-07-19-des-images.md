@@ -2,6 +2,7 @@
 title: des images
 update: 2023-03-09T04:19:08.597Z
 date: 2022-07-19T03:55:45.692Z
+category: blog
 layout: post
 ---
 Un post test avec des images pour voir comment ça fait. Avec une modif de date.

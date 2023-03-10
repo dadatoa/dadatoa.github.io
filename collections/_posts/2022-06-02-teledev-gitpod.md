@@ -1,7 +1,7 @@
 ---
 title: "Télétrav-dev: Gitpod"
 section: docs
-categories:
+category: docs
 tags:
 date: 2022-06-02T09:22:09.901Z
 update: 2022-06-02T09:22:09.901Z
