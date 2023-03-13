@@ -1,4 +1,3 @@
 ---
-section_name: projets
-permalink: projets/
+title: projets
 ---

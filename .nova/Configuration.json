@@ -1,5 +1,7 @@
 {
   "workspace.name" : "dadatoa.github.io",
   "workspace.preview_root" : "_site",
-  "workspace.preview_server_allow_external" : false
+  "workspace.preview_server_allow_external" : false,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/127.0.0.1:4000"
 }

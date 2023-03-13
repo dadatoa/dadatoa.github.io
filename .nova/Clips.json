@@ -1,13 +1,5 @@
 {
   "clips" : [
-    {
-      "children" : [
-        {
-          "content" : "docker run -ti --name jekyll --rm --volume=\"\\$PWD:\/srv\/jekyll\" gitpod\/ghpages:ruby2-slim jekyll build --watch",
-          "name" : "jekyll continuous build"
-        }
-      ],
-      "name" : "docker"
-    }
+
   ]
 }

@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-{%- if page.section_name -%}
-<h1 class="page-heading">{{ page.section_name }}</h1>
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
 {{ content }} 
 <ul class="post-list">
     {%- assign date_format_fr = "%-d %b %Y" -%}
     {%- assign posts = site.posts | sort: 'pubdate' | reverse -%}
     {%- for post in posts -%}
-    {% if post.category == page.section_name %}
+    {% if post.category == page.title %}
     <li>
         <span class="post-meta">
           {{ post.pubdate | date: date_format_fr }}
@@ -18,8 +18,8 @@ layout: default
           {%- endif -%}
         </span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt | truncated: 50 }}
+        {%- if post.description -%}
+          {{ post.decription | truncated: 50 }}
         {%- endif -%}
     </li>
     {% endif %}

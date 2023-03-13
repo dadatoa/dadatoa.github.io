@@ -1,16 +1,19 @@
 ---
-title: Docker node... Ou pas?
-category: blog
-tags:
+pubdate: 2023-03-10T11:50:14.721Z
+layout: post
 pubate: 2022-07-14T03:58:03.803Z
 upddate: false
-layout: post
+title: Docker node... Ou pas?
+description: "J'envisage de me lancer dans l'apprentissage de Strapi et de
+  Astro. Les deux projets sont basés sur NodeJS, et je me suis naturellement dit
+  que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à
+  trouver de la doc, donc j'ai décidé de tester ça moi même. "
+category: blog
+tags: null
 ---
-J'envisage de me lancer dans l'apprentissage de *Strapi* et de *Astro*. Les deux projets sont basés sur *NodeJS*, et je me suis naturellement dit que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à trouver de la doc, donc j'ai décidé de tester ça moi même. Sauf qu'en fait, les cas d'usage sont un peu limités...
-
 ## Pourquoi faire ?
 
-L'idée, comme globalement quand on veut mettre une app dans un docker, c'est de packer toute le projet et sont système dans un truc indépendant de tout le reste de la machine sur laquelle tu bosses. En général, soit tu fais ça pour pas polluer ta bécanes avec des dépendances qui peuvent entrer en conflit avec d'autres dépendances d'autres projets, ça arrive, soit parce que tu veux reproduire le plus fidèlement possible ton environnement de deploiment. 
+L'idée, comme globalement quand on veut mettre une app dans un docker, c'est de packer toute le projet et sont système dans un truc indépendant de tout le reste de la machine sur laquelle tu bosses. En général, soit tu fais ça pour pas polluer ta bécanes avec des dépendances qui peuvent entrer en conflit avec d'autres dépendances d'autres projets, ça arrive, soit parce que tu veux reproduire le plus fidèlement possible ton environnement de deploiement. 
 
 ### NPM / Yarn
 
@@ -64,7 +67,7 @@ image:
 
 Je compléterai plus tard. C'est le moment de lancer *Gitpod,* on va pouvoir s'amuser un peu. Une fois sur mon *workspace*, je configure mon projet *Node* dans un dossier à la racine du dépôt en suivant la doc de l'appli que je veux installer.
 
-### 3. .gitpod.Dockerfile et .gitpod.yml V2 
+### 3. .gitpod.Dockerfile et .gitpod.yml V2
 
 Jusqu'ici, tout se passe bien. Je vais cependant faire quelques modif. La configuration de base de Gitpod utilise un fichier `.gitpod.Dockerfile` (qui est un `Dockerfile` classique, il est juste préfixé par `.gitpod`). Je duplique mon `Dockerfile` et le renomme `.gitpod.Dockerfile`, puis je fais quelques modifs:
 
@@ -149,7 +152,6 @@ tasks:
     command: sh command.sh
   - command: echo "lancement d'un terminal"
   
-
 ```
 
 J'ai retiré `name` qui n'est pas indispensable, chaque objet Yaml (les tirets) correspond à un terminal, il est possible de lancer plusieurs terminaux en paralèlle et donc plusieurs commande (j'ai donc ici 2 terminaux). Je lance un premier terminal pour passer d'abord tout ce qui est *prebuild*, puis le script `command.sh` qui comportera les commandes pour démarrer le serveur de développement. C'est la raison pour laquelle je lance un deuxième terminal, ou je pourrai saisir les autres commandes que je souhaite passer à la main.

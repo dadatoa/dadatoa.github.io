@@ -1,6 +1,5 @@
 ---
-section_name: blog
-permalink: blog/
+title: blog
 layout: archive
 ---
 

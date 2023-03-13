@@ -1,10 +1,10 @@
 # config.yml
 
 backend:
-  name: github
+  name: git-gitaway
   repo: dadatoa/dadatoa.github.io
-  branch: gh-pages
-local_backend: false
+  branch: netlify-cms
+local_backend: true
 
 media_library:
   name: cloudinary

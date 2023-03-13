@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{%- if page.section_name -%}
-<h1 class="page-heading">{{ page.section_name }}</h1>
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
 {{ content }}  
 <ul class="post-list">
@@ -16,8 +16,8 @@ layout: default
           {%- endif -%}
         </span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt | truncated: 280 }}
+        {%- if post.description -%}
+          {{ post.description }}
         {%- endif -%}
     </li>
     {% endfor %}   
