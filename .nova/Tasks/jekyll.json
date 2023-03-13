@@ -1,0 +1,16 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "bundle install && bundle exec jekyll build"
+    },
+    "clean" : {
+      "enabled" : true
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "bundle exec jekyll serve --watch --increment"
+    }
+  },
+  "openLogOnRun" : "start"
+}

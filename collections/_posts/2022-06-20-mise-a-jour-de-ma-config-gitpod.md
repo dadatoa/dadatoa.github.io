@@ -1,13 +1,14 @@
 ---
 title: Mise à jour de la config Gitpod
+description: "J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un
+  peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars
+  d'une image Bookworm Slim."
 category: docs
-tags:
+tags: null
 pubdate: 2022-06-20T10:05:50.944Z
-update: false 
+update: false
 layout: post
 ---
-J'ai mis à jour mon *Dockerfile Gitpod* : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars d'une image *Bookworm Slim*. 
-
 Ça fait un peu plus de trucs à installer, mais je gagne un peu d'espace, et je résous au passage un problème que j'avais en local. En plus, ma nouvelle image me permet d'avoir la même configuration de *Jekyll* localement (et sur *Gitpod*) que sur *Github Pages*.
 
 ## 1. Changer d'image et adapter la configuration
@@ -138,8 +139,6 @@ services:
     volumes:
       - ./_site:/usr/share/caddy
 ```
-
-
 
 J'utilise l'image `caddy`, je redirige le 80 de container sur le 8080 de ma machine hôte, et je monte le répertoire `_site` local dans mon container serveur, pour avoir des pages à afficher! Et c'est tout. 
 

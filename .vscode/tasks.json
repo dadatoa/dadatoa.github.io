@@ -1,6 +1,57 @@
 {
     "version": "2.0.0",
     "tasks": [
-
+        {
+            "label": "decap serve",
+            "type": "shell",
+            "command": "npx netlify-cms-proxy-server",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "jekyll serve",
+            "type": "shell",
+            "command": "bundle exec jekyll serve --watch --increment",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "cmsDev",
+            "type": "shell",
+            "command": "gsed -i.`date +%F` -f .scripts/decapDevSed admin/config.yml",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": true,
+            }
+        },
+        {
+            "label": "cmsprod",
+            "type": "shell",
+            "command": "gsed -i.`date +%F` -f .scripts/decapProdSed admin/config.yml",
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": true,
+            }
+        },
     ]
 }

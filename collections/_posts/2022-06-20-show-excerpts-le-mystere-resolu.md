@@ -1,7 +1,11 @@
 ---
 title: "show excerpts: le mystère résolu"
+description: "Je n'avais pas pigé à quoi ça servait! C'est chose faite. Si toi
+  aussi tu te demandes: Lorsque l'option show-excerpts est à true dans le
+  fichier _config.yml, Jekyll va récupérer le premier bloc de ton post (ça peut
+  être un pargagraphe,"
 category: blog
-tags:
+tags: null
 pubdate: 2022-06-21T11:57:25.096Z
 update: false
 layout: post

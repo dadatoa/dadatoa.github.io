@@ -20,8 +20,8 @@ layout: default
             {%- endif -%}
           </span>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt | truncate: 280 }}
+          {%- if post.description -%}
+            {{ post.descritpion }}
           {%- endif -%}
       </li>
       {% endfor %}   

@@ -1,14 +1,16 @@
 ---
 title: Faire du rangement
+description: "Mon projet commence à grossir tranquillement. L'utilisation de
+  plusieurs outils rend le repo un peu bordélique : y'a plein de fichiers qui
+  n'ont rien à voir avec mon site Jekyll."
 category: docs
-tags: 
+tags: null
 pubdate: 2022-06-08T14:13:52.720Z
-update: false 
+update: false
 layout: post
 ---
-Mon projet commence à grossir tranquillement. L'utilisation de plusieurs outils rend le repo un peu bordélique : y'a plein de fichiers qui n'ont rien à voir avec mon site Jekyll. 
-
 En plus Jekyll à tendance à recopier tout le contenu du projet vers le dossier de déploiment, et peut-être qu'il y a des fichiers qui n'ont pas besoin d'être déployés.
+
 ## Technique n°1: créer un répertoire source
 
 *Jekyll* permet de spécifier dans le fichier `_config.yml` un dossier qui contiendra toutes les sources nécessaires à la construction du site. Je dois juste ajouter une ligne `source: repertoire_source/` dans le fichier de config. *Jekyll* ira chercher les fichiers dans ce repertoire uniquement pour construire le site, ignorant tout ce qui se trouve à la racine du projet. Du coup, tout ce qui ne concerne pas le site n'est pas déployé. C'est trop cool... 

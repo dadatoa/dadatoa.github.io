@@ -4,15 +4,18 @@ description: un beau site
 
 #baseurl: ""
 
-show_excerpts: true
+show_excerpts: false
+excerpts_separator: <-- more -->
 
-theme: minima
+#theme: minima
 
 permalink: /:categories/:title
 
 collections_dir: collections
 
 collections:
+  api:
+    output: true
   sections:
     output: true
     posts:
@@ -28,6 +31,7 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
+      type: "pages"
     values:
       layout: "home"
 

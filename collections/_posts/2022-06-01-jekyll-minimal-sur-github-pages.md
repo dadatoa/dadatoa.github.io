@@ -1,13 +1,14 @@
 ---
 title: Jekyll minimal sur Github Pages
+description: Quelques étapes pour créer un site github pages ultre minimaliste
+  et ultra vite en utilisant les fonctionnalités de Jekyll fourni par Github
+  Pages.
 category: docs
-tags: 
-pubdate: 2022-06-01T09:21:01.108Z 
+tags: null
+pubdate: 2022-06-01T09:21:01.108Z
 update: false
 layout: post
 ---
-Quelques étapes pour créer un site github pages ultre minimaliste et ultra vite en utilisant les fonctionnalités de Jekyll fourni par Github Pages.
-
 ## Etape 1: Créer le dépôt
 
 Le nom du dépôt importe peu. L'adresse du site aura la forme : pseudo.github.io/nom-du-repo. Si le nom de ton dépôt est pseudo.github.io, ton site sera disponible directement à l'adresse `https://pseudo.github.io`.

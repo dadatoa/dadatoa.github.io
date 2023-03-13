@@ -1,0 +1,17 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "gsed -i.`date +%F` -f .scripts\/decapDevSed admin\/config.yml"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "gsed -i.`date +%F` -f .scripts\/decapProdSed admin\/config.yml"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "npx netlify-cms-proxy-server"
+    }
+  },
+  "openLogOnRun" : "start"
+}

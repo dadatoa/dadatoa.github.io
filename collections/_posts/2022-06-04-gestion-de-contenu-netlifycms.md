@@ -1,14 +1,16 @@
 ---
-title: "gestion de contenus : Netlify-cms"
-category: docs
-tags:
-pubdate: 2022-06-04T09:22:40.807Z
 update: false
+title: "gestion de contenus : Netlify-cms"
+description: Netlify-cms est un outil open-source qui permet de gérer le contenu
+  des générateurs de sites statiques. Il se connecte au dépôt (par exemple
+  Github), permet d'éditer / créer / suprimer des fichier markdown ou des
+  entrées dans des fichiers yaml.
+category: docs
+tags: null
+pubdate: 2022-06-04T09:22:40.807Z
 layout: post
 source: https://cnly.github.io/2018/04/14/just-3-steps-adding-netlify-cms-to-existing-github-pages-site-within-10-minutes.html
 ---
-Netlify-cms est un outil open-source qui permet de gérer le contenu des générateurs de sites statiques. Il se connecte au dépôt (par exemple Github), permet d'éditer / créer / suprimer des fichier markdown ou des entrées dans des fichiers yaml.
-
 ## Etape 1: créer une app Github Oauth
 
 Direction là: <https://github.com/settings/developers>. Ou sinon, vas dans tes settings > Developer settings - ça se trouve tout en bas du menu gauche. Là, tu choisi dans le nouveau menu gauche `OAuth Aps`, y'a un gros bouton `New OAuth app`. Je vais créer une nouvelle app:
