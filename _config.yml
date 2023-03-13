@@ -7,7 +7,7 @@ description: un beau site
 show_excerpts: false
 excerpts_separator: <-- more -->
 
-#theme: minima
+theme: minima
 
 permalink: /:categories/:title
 
