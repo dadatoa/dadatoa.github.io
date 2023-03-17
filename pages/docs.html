@@ -19,7 +19,7 @@ permalink: /docs/
           {%- endif -%}
         </span>
         <h3><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></h3>
-        {%- if post.description -%}
+        {%- if doc.description -%}
           {{ doc.description }}
         {%- endif -%}
     </li>

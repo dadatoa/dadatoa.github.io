@@ -9,19 +9,24 @@ layout: default
 
 <ul class="post-list">
       {%- assign date_format_fr = "%-d %b %Y" -%}
-      {%- assign posts = site.posts | sort: 'pubdate' | reverse -%}
-      {%- for post in posts limit: 5 -%}
+
+      {%- assign posts = site.posts -%}
+      {%- assign docs = site.docs -%}
+      {%- assign projets = site.projets -%}
+
+      {%- assign everythings = posts | concat: docs | concat: projets | sort: 'pubdate' | reverse -%}
+
+      {%- for thing in everythings limit: 5 -%}
       <li>
-          {% if post.category %}<span class="post-meta"><a href="{{ post.category | relative_url }}">{{ post.category }}</a> | </span>{% endif %}
           <span class="post-meta">
-            {{ post.date | date: date_format_fr }}
-            {%- if post.update -%}
-            - mis à jour le {{ post.pubdate | date: date_format_fr }}
+            {%- if thing.update -%}
+            mis à jour du {{ thing.pubdate | date: date_format_fr }} - publié à l'origine le&nbsp;
             {%- endif -%}
+            {{ thing.date | date: date_format_fr }}
           </span>
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          {%- if post.description -%}
-            {{ post.descritpion }}
+          <h3><a href="{{ thing.url | relative_url }}">{{ thing.title }}</a></h3>
+          {%- if thing.description -%}
+            {{ thing.description }}
           {%- endif -%}
       </li>
       {% endfor %}   
