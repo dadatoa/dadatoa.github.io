@@ -18,8 +18,16 @@ collections:
     output: true
   sections:
     output: true
-    posts:
     permalink: /:title/
+  archives:
+    output: true
+    permalink: /:collection/:title
+  docs:
+    output: true
+    permalink: /:collection/:title
+  projets:
+    output: true
+    permalink: /:collection/:title
     
 defaults:
   - 
