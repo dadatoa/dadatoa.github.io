@@ -18,9 +18,9 @@ Je vais créer une collection par section sur le site, et je mettrai la navigati
 
 - [ ] pour la section *archives*, créer une page spécifique avec concaténation des contenus de toutes les sections (possible avec liquid)
 
-## Déplacer les contenus dans leurs sections respectives
+### Déplacer les contenus dans leurs sections respectives
 
-## Personnaliser le style du site
+### Personnaliser le style du site
 
 Je dois me débarrasser définitivement de *minima* et créer mes propres css.
 
