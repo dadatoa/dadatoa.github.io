@@ -1,6 +1,6 @@
 ---
 title: "Je débute le scrapping avec Python"
-description: "Dans ce premier articles, je vais configurer mes outils et mon environnement de développement Python 3."
+description: "Dans ce premier article, je vais configurer mes outils et mon environnement de développement Python 3."
 category: docs
 tags:
 - python
