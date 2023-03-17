@@ -19,8 +19,8 @@
 
         <div class="trigger">
             <a href="/" class="page-link">Home</a>
-          {%- for section in site.sections -%}
-            <a class="page-link" href="{{ section.url | relative_url }}">{{ section.title | escape }}</a>
+          {%- for section in site.data.sections -%}
+            <a class="page-link" href="{{ section.link | relative_url }}">{{ section.name | escape }}</a>
           {%- endfor -%}
         </div>
       </nav>
