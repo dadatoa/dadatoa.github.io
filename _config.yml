@@ -16,9 +16,6 @@ collections_dir: collections
 collections:
   api:
     output: true
-  sections:
-    output: true
-    permalink: /:title/
   archives:
     output: true
     permalink: /:collection/:title
