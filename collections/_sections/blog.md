@@ -1,5 +1,0 @@
----
-title: blog
-layout: archive
----
-

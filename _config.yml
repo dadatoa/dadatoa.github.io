@@ -16,10 +16,15 @@ collections_dir: collections
 collections:
   api:
     output: true
-  sections:
+  archives:
     output: true
-    posts:
-    permalink: /:title/
+    permalink: /:collection/:title
+  docs:
+    output: true
+    permalink: /:collection/:title
+  projets:
+    output: true
+    permalink: /:collection/:title
     
 defaults:
   - 

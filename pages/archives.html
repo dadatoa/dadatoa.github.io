@@ -1,22 +1,22 @@
 ---
+title: Archives
 layout: default
+permalink: /archives/
 ---
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
 
-<div class="home">
-  {{ content }}
-
-<h2>news</h2>
-
+{%- assign date_format_fr = "%-d %b %Y" -%}
 <ul class="post-list">
-      {%- assign date_format_fr = "%-d %b %Y" -%}
-
       {%- assign posts = site.posts -%}
       {%- assign docs = site.docs -%}
       {%- assign projets = site.projets -%}
 
       {%- assign everythings = posts | concat: docs | concat: projets | sort: 'pubdate' | reverse -%}
 
-      {%- for thing in everythings limit: 5 -%}
+      {%- for thing in everythings -%}
+      
       <li>
           <span class="post-meta">
             {%- if thing.update -%}
@@ -29,6 +29,6 @@ layout: default
             {{ thing.description }}
           {%- endif -%}
       </li>
-      {% endfor %}   
-  </ul>
-</div>
+      {% endfor %} 
+</ul>
+
