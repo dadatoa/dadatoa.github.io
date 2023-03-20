@@ -1,3 +1,4 @@
 s/name: github/name: git-gitaway/
 s/branch: gh-pages/branch: decap/
 s/local_backend: false/local_backend: true/
+s/#media_folder:/media_folder:/

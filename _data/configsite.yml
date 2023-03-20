@@ -1,0 +1,18 @@
+sections:
+  - name: Home
+    link: /
+  - name: Blog
+    link: /blog/
+  - name: Docs
+    link: /docs/
+  - name: Projets
+    link: /projets/
+  - name: Archives
+    link: /archives/
+  - name: Admin
+    link: /admin/
+categories:
+  - name: undefined
+    label: non classé
+  - label: catégorie test
+    name: testcat
