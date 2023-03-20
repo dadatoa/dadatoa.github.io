@@ -13,14 +13,14 @@ permalink: /blog/
     {%- for post in posts -%}
     <li>
         <span class="post-meta">
-          {{ post.pubdate | date: date_format_fr }}
           {%- if post.update -%}
-          &nbsp;| originellement publié le {{ post.date | date: date_format_fr }}
+          [MAJ] {{ post.pubdate | date: date_format_fr }} | publication d'origine&nbsp;
           {%- endif -%}
+          {{ post.date | date: date_format_fr }}
         </span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         {%- if post.description -%}
-          {{ post.description | truncated: 50 }}
+          {{ post.description }}
         {%- endif -%}
     </li>
     {% endfor %}   

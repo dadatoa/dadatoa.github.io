@@ -30,9 +30,21 @@ defaults:
   - 
     scope:
       path: ""
-      type: "sections"
+      type: "posts"
     values:
-      layout: "section"
+      collection: "blog"
+  - 
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      collection: "docs"
+  - 
+    scope:
+      path: ""
+      type: "projets"
+    values:
+      collection: "projets"
   -
     scope:
       path: "" # an empty string here means all files in the project

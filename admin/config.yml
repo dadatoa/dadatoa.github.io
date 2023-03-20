@@ -66,6 +66,56 @@ collections:
         }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Publish Date", name: "pubdate", widget: "datetime", date_format: "DD.MM.YYYY" }
+      - { label: "Update", name: "update", widget: "boolean", default: false,}
       - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
       - { label: "Body", name: "body", widget: "markdown" }
-  
+
+ #  Docs
+  - name: "docs"
+    label: "Docs"
+    folder: "collections/_Docs/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", pattern: ['^.{1,280}$', "280 charactères max"] }
+      - { label: "Category",name: "category", 
+        widget: "relation",
+        collection: "config",
+        file: "configuration",
+        search_fields: ["categories.*.label"],
+        display_fields: ["categories.*.label"],
+        value_field: "categories.*.name",
+        }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Publish Date", name: "pubdate", widget: "datetime", date_format: "DD.MM.YYYY" }
+      - { label: "Update", name: "update", widget: "boolean", default: false,}
+      - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
+      - { label: "Body", name: "body", widget: "markdown" }
+
+ # Projects
+  - name: "projets"
+    label: "Projets"
+    folder: "collections/_projets/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", pattern: ['^.{1,280}$', "280 charactères max"] }
+      - { label: "Category",name: "category", 
+        widget: "relation",
+        collection: "config",
+        file: "configuration",
+        search_fields: ["categories.*.label"],
+        display_fields: ["categories.*.label"],
+        value_field: "categories.*.name",
+        }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Publish Date", name: "pubdate", widget: "datetime", date_format: "DD.MM.YYYY" }
+      - { label: "Update", name: "update", widget: "boolean", default: false,}
+      - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
+      - { label: "Body", name: "body", widget: "markdown" }
