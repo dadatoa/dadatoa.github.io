@@ -14,5 +14,3 @@ sections:
 categories:
   - name: undefined
     label: non classé
-  - label: catégorie test
-    name: testcat
