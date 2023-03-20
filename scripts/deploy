@@ -1,5 +1,0 @@
-#!/bin/sh
-sed -i 's/^title:/#title:/' _config.yml 
-sed -i 's/^description:/#description:/' _config.yml 
-sed -i 's/^baseurl:/#baseurl:/' _config.yml
-
