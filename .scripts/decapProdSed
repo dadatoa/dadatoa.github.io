@@ -1,3 +1,3 @@
 s/name: git-gitaway/name: github/
-s/branch: netlify-cms/branch: gh-pages/
+s/branch: decap/branch: gh-pages/
 s/local_backend: true/local_backend: false/
