@@ -1,2 +1,0 @@
-#!/bin/sh
-docker run -ti --name jekyll --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 gitpod/ghpages:ruby2-slim jekyll build --watch

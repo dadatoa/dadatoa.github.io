@@ -16,7 +16,7 @@
         {
             "label": "jekyll serve",
             "type": "shell",
-            "command": "bundle exec jekyll serve --watch --increment",
+            "command": "bundle exec jekyll serve --watch",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
