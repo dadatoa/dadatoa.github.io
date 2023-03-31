@@ -5,3 +5,4 @@ _site/
 .gitmodules
 vendor/
 .Ds_Store
+.obsidian/
