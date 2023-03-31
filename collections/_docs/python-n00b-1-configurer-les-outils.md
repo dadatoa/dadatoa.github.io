@@ -1,14 +1,13 @@
 ---
 title: "python n00b 1: configurer les outils"
-description: "J'ai décidé de m'initier à Python (de nouveau...). Pour débuter, je vais configurer mes outils et mon environnement de développement Python 3."
-category: docs
-tags:
-- python
-- venv
-- scrapping
-pubdate: 2023-03-17T05:05:32.926Z
-layout: post
+slug: python-n00b-1-configurer-les-outils
+collection: _docs
+tags: [python, venv, scrapping]
+date: 2023-03-17
+share: true
 ---
+
+J'ai décidé de m'initier à Python (de nouveau...). Pour débuter, je vais configurer mes outils et mon environnement de développement Python 3.
 
 ## Venv
 

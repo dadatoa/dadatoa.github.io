@@ -24,7 +24,8 @@
                 "panel": "new",
                 "showReuseMessage": true,
                 "clear": false
-            }
+            },
+            "problemMatcher": []
         },
         {
             "label": "cmsDev",
@@ -36,7 +37,7 @@
                 "focus": false,
                 "panel": "new",
                 "showReuseMessage": true,
-                "clear": true,
+                "clear": true
             }
         },
         {
@@ -50,8 +51,8 @@
                 "focus": false,
                 "panel": "new",
                 "showReuseMessage": true,
-                "clear": true,
+                "clear": true
             }
-        },
+        }
     ]
 }

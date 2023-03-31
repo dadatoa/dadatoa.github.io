@@ -1,15 +1,13 @@
 ---
-layout: post
-pubate: 2022-07-14T03:58:03.803Z
-upddate: false
 title: Docker node... Ou pas?
-description: "J'envisage de me lancer dans l'apprentissage de Strapi et de
-  Astro. Les deux projets sont basés sur NodeJS, et je me suis naturellement dit
-  que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à
-  trouver de la doc, donc j'ai décidé de tester ça moi même. "
-category: blog
-tags: null
+slug: 2022-07-14-docker-node-ou-pas
+collection: _posts
+tags: [docker, gitpod]
+share: true
 ---
+
+J'envisage de me lancer dans l'apprentissage de Strapi et de Astro. Les deux projets sont basés sur NodeJS, et je me suis naturellement dit que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à trouver de la doc, donc j'ai décidé de tester ça moi même. 
+
 ## Pourquoi faire ?
 
 L'idée, comme globalement quand on veut mettre une app dans un docker, c'est de packer toute le projet et sont système dans un truc indépendant de tout le reste de la machine sur laquelle tu bosses. En général, soit tu fais ça pour pas polluer ta bécanes avec des dépendances qui peuvent entrer en conflit avec d'autres dépendances d'autres projets, ça arrive, soit parce que tu veux reproduire le plus fidèlement possible ton environnement de deploiement. 

@@ -1,7 +1,12 @@
 ---
 title: Mise à jour de la config Gitpod
-description: "J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un
-  peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars
+slug: 2022-06-20-mise-a-jour-de-ma-config-gitpod
+collection: _posts
+tags: [jekyll, gitpod, docker]
+share: true
+---
+
+J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars
   d'une image Bookworm Slim."
 category: docs
 tags: null

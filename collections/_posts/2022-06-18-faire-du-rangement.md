@@ -1,14 +1,13 @@
 ---
-title: Faire du rangement
-description: "Mon projet commence à grossir tranquillement. L'utilisation de
-  plusieurs outils rend le repo un peu bordélique : y'a plein de fichiers qui
-  n'ont rien à voir avec mon site Jekyll."
-category: testcat
-tags: null
-pubdate: 2022-06-08T14:13:52.720Z
-update: false
-layout: post
+title: "Faire du rangement"
+slug: 2022-06-18-faire-du-rangement
+collection: _posts
+tags: [jekyll, github-pages]
+share: true
 ---
+
+Mon projet commence à grossir tranquillement. L'utilisation de plusieurs outils rend le repo un peu bordélique : y'a plein de fichiers qui n'ont rien à voir avec mon site Jekyll.
+
 En plus Jekyll à tendance à recopier tout le contenu du projet vers le dossier de déploiment, et peut-être qu'il y a des fichiers qui n'ont pas besoin d'être déployés.
 
 ## Technique n°1: créer un répertoire source
