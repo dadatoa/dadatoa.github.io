@@ -4,7 +4,7 @@ slug: jekyll-minimal-sur-github-pages
 collection: _docs
 tags: [gitpod, docker]
 date: 2022-06-01
-share: true
+
 ---
 
 Quelques étapes pour créer un site github pages ultre minimaliste et ultra vite en utilisant les fonctionnalités de Jekyll fourni par Github Pages.
