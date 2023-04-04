@@ -3,7 +3,7 @@ title: "Utiliser Obsidian comme CMS pour Github Pages"
 slug: 2023-03-29-obsidian-cms-jekyll
 collection: _posts
 tags: [obsidian, jekyll, github-pages]
-share: true
+
 update: 2023-03-31
 ---
 
