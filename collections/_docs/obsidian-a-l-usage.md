@@ -1,61 +1,80 @@
 ---
-title: "Obsidian: à l'usage"
+title: "Obsidian: la base"
 slug: obsidian-a-l-usage
 collection: _docs
-tags: []
-date: 2023-03-31
-share: true
+tags: [obsidian]
+date: 2023-03-29
+
 ---
+Obsidian est une application qui permet la prise de note dans des fichiers markdown, directement stocké dans un dossier sur la machine en local. Il est possible d'adhérer au service (payant) qui permet de stocker ses notes sur leurs serveurs.
 
-J'ai pondu quelques articles, il est temps de voir comment j'upload tout ça sur mon dépôt Github.
+Cependant, Obsidian n'étant pas opne source, bien que ses conepteurs/dévelopeurs aient l'air de bonne fois, à titre perso je préfère garder mes fichiers privés en local, ou à l'extrème limite sur des trucs pas trop sensible les mettre sur un dépôt git hébergé en privé. J'envisage de l'utiliser comme système de gestion de contenus (*CMS*) pour mon site Jekyll hébergé sur Github-Pages [ (voir là)](2023-03-29-obsidian-cms-jekyll.md).
 
-## Formater les articles
+## Organisation des fichiers
 
-Avant de pousser les notes vers le dépôt, vérifie quand même le formatage de tes notes, en particulier des frontmatters. Rapelle-toi la [ configuration du plugin](obsidian-github-publisher-setup.md) et celle de ton site:
-- **title:** *(string)* c'est le titre des posts et articles dans mon Jekyll, si pas de titre, pas d'affichage
-- **collection:** *(string)* j'ai défini que cette clé indiquait le dossier ou allait être uploadée les notes
-- **slug:** *(string)* c'est la clé de référence que j'ai choisi pour créer le nom de fichier sur le dépôt
-- **tags:** *(array)* je n'ai pas indiqué que je voulais un reformatage des tags, il faudra bien les écrire sous forme de liste entre crochets pour permettre à Jekyll de les interpréter correctement
-- **share:** *(boolean)* j'ai laissé la valeur par défaut dans le dernier onglet, c'est la clé qui défini si la not doit être uploadée ou non.
-- Je rajoute une clé **date** qui doit être formattée *AAAA-JJ-MM* pour toutes les notes qui ne sont pas des posts de blog (pour les posts de blog, la date est dans le slug sous Jekyll) ainsi qu'une clé **update** *(même format)* facultative qui si elle est rensignée indique que la note a été mise à jour par rapport à sa date de publication
+Quand tu ouvres l'application, tu es invité à ouvrir ou créer un *vault* local ou à ouvrir un *vault* en ligne. Pour cette 3ème option tu dois être connecté avec un compte à l'application. Moi je préfère, autant que faire se peut éviter de me logger systématiquement sur toutes les plattesformes, mais données privées sont bine assez publiquescomme ça...! 
 
-Ce qui fait que chaque note doit au minimum avoir toutes ces valeurs de frontmatter paramétrée si je veux que le système fonctionne, par exemple:
+Donc tu crée ton *vault*, qui va être en gros le dossier racine de ton espace de prise de notes, dans lequel tu peux créer des notes, donc, qui sont simplement des fichiers markdown avec possiblement un frontmatter, et des dossiers dans lesquels tu vas pouvoir stockés tes notes si tu souhaites les organiser un peu. L'arborescence de fichiers/dossiers que tu crées dans l'application se retrnascrit telle quelle sur ton disque dur, ce qui en facilite la gestion. Il y a juste un *dotfile* qui est créé à la racine de ton *vault* et qui va contenir les métadonnées du *vault* et les différent réglages qui lui sont propres.
 
-```yaml
----
-title: "Mon super titre"
-collection: _posts
-slug: 2023-03-31-mon-super-titre
-tags: [tag1, tag2, tag3]
-share: false
----
+D'ailleurs, tu noteras que si tu tu crée un autre *vault*, les réglages et même les plugin que tu auras installlés dans le premier ne seront pas présent dans le second, chaque *vault* est indépendant de ce point de vue là.
+
+## Markown + Yaml
+
+C'est un combo classique que tu peux retrouver souvent sur les générateurs de sites statiques, dont je suis particulièrment fan, et sur celui qui est peut-être le plus utilisé: Jekyll.
+
+#### Markdown
+
+C'est une façon d'écrire du texte facilement qui pourra être reformatté tout aussi facilement par un programme pour sortir d'autre format plus adaptés à la présentation, comme du html sur le net par exemple. C'est un markdown de base avec un petit truc en plus: le formatage des liens entre doubles crochets façon wiki. Tu peux lier tes notes à l'aide de se type de lien à l'intérieur de ton *vault*. Il est aussi possible d'utiliser le formatage des liens markdown classique. Pour le formatage du texte, les outils wysiwyg sont dans le menu format, pas super ergonomique d'accès, donc c'est pas mal de connaître la syntaxe markdown pour écrire du texte.
+
+#### Yaml
+
+C'est comme avec Jekyll: tous les fichiers markdown peuvent avoir une en-tête en Yaml. C'est un langage de formatage de données (un peu comme le xml ou json) qi à l'énorme avantage d'être facile à lire pour nous-autres, êtres humains. Ici il va te servir à indiquer des méta-données pour chacune de tes note, ça peut être par exemple:
+- un titre
+- une date de création / de publication / de modification
+- la catégorie dans laquelle tu veux ranger ta notes
+- des tags
+- liste non exhaustive (...)
+
+## Ecrire une note
+
+Si comme moi t'as déjà un peu joué avec Jekyll ou Github-Pages, écrire une note sous Obsidian ressemble beaucoup à écrire une page ou un post pour le publier sur Jekyll. J'ai configuré mon *vault* pour que les nom de fichier n'aparaissent pas en gros en haut de la note, je trouve ça plus lisible, et de toutes façons, l'arborescence de fichier se trouve dans le panneau gauche.
+
+### Source Mode
+
+Lorsque tu écris une note, tu peux basculer en *Source Mode* dans le menu *View* de la barre d'outil. Ce mode te mermet d'afficher les tags Markdown sur ta page pour avoir un contrôle plus fin de la forme de ta note, ou de repérer les éventuelles erreur de formatages, les conflits entre les balises bizarrement interprétés, ce genre de chose.
+
+### Mode de lecture
+
+Si tu vas faire u tour dans le menu *View* de la barre d'outil, tu veras que tu as une *Reading View* (raccourci `<option> + E`). Ce mode désactive la  capacité d'écriture et propose une affichage pour la lecture seulement. Ça évite de modifier des rucs dans les notes par inadvertance quand on veut juste se relire... d'autant qu'à priori Obsidian enregistre les modifications en continu et de façon transparente.
+
+### formatage des notes
+
+Vu que j'envisage de me servir de se *vault* comme d'un genre de CMS pour mon site Github-Pages, je formate mes notes en conséquence:
+- j'ai reproduit les dossiers correspondant à mes collections
+- je nomme mes fichier (au moins pour ce qui va devienir un post de blog) selon les standards des posts Jekyll
+- je ne mets pas de titre de premier niveau dans ma note, mais j'indique le titre de la note dans le frontmatter.
+Ce qui est plutôt cool aussi c'est que Obsidian supporte par défaut les tags, que tu peux ajouter à l'aide d'une une clé `tags` dans ton frontmatter, organisé sous forme d'une liste yaml entre crochet, ce qui permet de respecter également la syntaxe de Jekyll. Les tags s'affichent dans le penneau repliable droit de l'application. 
+
+## Lier les notes
+
+En plus des liens classiques que tu peux écrire en markdown sous la forme `[texte du lien](url/du/lien)`, Obsidian supporte les wikilinks pour les lien internes, dont la syntaxe est la suivante: 
+```markdown
+[cible-du-lien](cible-du-lien.md)
 ```
 
-J'aurais quelques petits paramétrages à faire côté Jekyll pour que mes clés date et update soient bien interprétées dans mes templates, mais rien méchant.
+Ou bien, si tu veux personnaliser le texte du lien:
+```markdown
+[ texte du lien](cible-du-lien.md)
+```
 
-## Publier plusieurs notes
+L'ensemble des notes de ton *vault* peuvent être ensuite affichées dans un *graph* ou les notes sont représentées par des points reliés entre eux en fonction des liens.
 
-Pour se faire, tu t'assures déjà que tu as des notes avec les bonnes info dans leur frontmatter, et en particulier une clé **share** dont la valeur est à *true*. Ensuite tu clique sur le bouton `>_` qui ouvre la *command palette* et tu clique sur *Github publisher: Upload all shared notes* ce qui aura pour effet d'envoyer toutes les notes dont la clé *share* est à true vers ton dépôt Github sur la branche spécifiée.
+Le seul inconvénient majeur des wikilinks, c'est qu'ils ne sont pas supportés par défaut par Jekyll. Donc en vue de publier les notes de mon *vault* sur Github-Pages, c'est à prendre en compte. Il me semble que le plugin que je compte utiliser pour mes publication gère la conversion des liens wikilinks. Si ce n'est pas le cas, je vais devoir modifier tous les liens que j'aurais écrit en wikilins pour les convertir en lien markdown classiques, ou éventuellement trouver un plugin Jekyll qui gère les wikilinks, mais si ça éxiste, il ne sera pas supporté par Github-Pages. Mais c'est pas (encore) le sujet!
 
-## Ah oui mais non, j'ai publié trop vite
+## Les templates
 
-C'est pas grave, t'as activé *auto clean-up*! Dans ton *vault*, dans le frontmatter de toutes les notes que tu veux dépublier, tu passe la valeur de *share* à *false*. Ensuite, de nouveau *command palette* `>_`, et tu clique sur *Obsidian: Purge unpublished and deleted files*. Et là pouf, toutes les notes de ton vault que tu veux dépublier dégage de ton repo Github.
+Obsidian propose également un système de template pour préformater les notes. Je vais pouvoir automatiser de cette manière une partie de la création de mes notes en vue d'une publcation sur mon site, en particulier au niveau du frontmatter. J'avoue, j'ai pas encore trop explorer la question, mais dès que j'ai correctement configuré le plugin Github Publisher, je m'attaque au templates!
 
-Alors par contre, en faisant le test, j'ai eu une mauvaise expérience... il se trouve que j'avais déjà des posts publiés d'avant dans mes collections, et quand le plugin fait le scan, en gros il synchronise avec ton *vault*. Du coup il a supprimer tout ce qu'i n'était pas dans le *vault*... J'ai bien fait de pas bosser sur ma branche principale! cependant, comme j'ai fait ça sur mon vrai dépôt, sur ma vrai branche de pubication, ça a fait sauter tout le contenu de mon site, ce qui n'est pas très grave, encore une fois, puisque tout est toujours sur ma branche master, mais enfin, c'est un peu relou.
+## What next?
 
-Conclusion: si tu active *auto clean-up* dans le plugin Github Publisher, et que tu a déjà un site qui tourne, fait en sorte de rapatrier tout ce qui est déjà publier dans ton *vault* si tu ne veux pas avoir de sales surprises.
-
-## Publier les notes une par une
-
-Je pense qu'une fois que le site est lancé, c'est un peu plus safe: tu écris ta note, tu fait ton frontmatter bien propre, tu te relis pour être sûr, et une fois que tu est sûr de ton coup, tu peux publier:
-- tu commences par passer la valeur de *share* à *true* dans le frontmatter de ta note
-- `>_` (*command palette* ) > *Github Publisher: Upload single current active note*. Tu ne publiera comme cela que la note sur laquelle tu viens de finir de travailler. 
-	**Observation:** si ta note n'est pas prête à être publier (dans mon cas, si la 
-	valeur de *share* n'est pas à *true*, cette commande n'apparaît pas). 
-
-## D'autres options
-
-Github Publisher propose d'autres commandes utiles pour faire des actions groupées pour plusieurs notes: rafraîchir les notes déjà publier, ré-uploader toutes les notes, uploader les notes non publiées, uploader les nouvellees notes publiées et rafraîchir les anciennes, je te refais pas de topo.
-
-Enfin, la dernière commande de Gitub Publisher pour Obsidian est:
-*test the connexion to the configured repository* qui peut être bien pratique pour s'assurer qu'on ne s'est pas planté dans la config du plugin à l'ongelt *Github Configuration*
+Maintenant que t'as un peu joué avec Obsidian, il est temps de le connecter à ton repo Github pour gérer ton contenu sur github Pages (ou Netlify ou n'importe quel hebergeur Github based). L'option que j'ai choisi c'est donc d'installer le plugin *Github Publisher*, à voir [ ici](obsidian-github-publisher-setup.md).
