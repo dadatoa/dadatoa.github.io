@@ -4,7 +4,7 @@ slug: teledev-gitpod
 collection: _docs
 tags: [gitpod, docker]
 date: 2022-06-02
-share: true
+
 ---
 
 Rien à voir avec Jekyll... mais plus avec Github. Gitpod est un outil cool qui permet de coder avec un VSCode dans un navigateur, qui possède un terminal et qui technique tourne dans un container Docker. 

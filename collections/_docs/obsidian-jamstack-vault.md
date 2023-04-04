@@ -4,7 +4,7 @@ slug: obsidian-jamstack-vault
 collection: _docs
 tags: [obsidian, jamstack, github, github-publisher]
 date: 2023-03-30
-share: true
+
 ---
 
 Je vais m'attaquer à la configuration de mon *vault* en vue de la publication de mes notes sur mon site Github Pages. Ce qui marche ici pour Jekyll/Github-Pages devrait fonctionner pour n'importe quel système jamstack en tout cas pour la partie éditorial en markdown.

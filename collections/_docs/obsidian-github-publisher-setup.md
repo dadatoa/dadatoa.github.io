@@ -4,7 +4,7 @@ slug: obsidian-github-publisher-setup
 collection: _docs
 tags: [obsidian, github, github-publisher, github-pages]
 date: 2023-03-30
-share: true
+
 ---
 
 Pour pouvoir gérer le contenu de mon site Jekyll avec Obsidian, j'utilise le plugin Github Publisher, qui permet de créer des posts et des articles à partir des notes de ton *vault*.
