@@ -4,10 +4,10 @@ slug: python-n00b-1-configurer-les-outils
 collection: _docs
 tags: [python, venv, scrapping]
 date: 2023-03-17
-share: true
+
 ---
 
-J'ai décidé de m'initier à Python (de nouveau...). Pour débuter, je vais configurer mes outils et mon environnement de développement Python 3.
+J'ai décidé de m'initier à Python (de nouveau...). Pour débuter, voilà configurerl es outils et l'environnement de développement Python 3.
 
 ## Venv
 
@@ -16,6 +16,7 @@ J'ai décidé de m'initier à Python (de nouveau...). Pour débuter, je vais con
 ```bash
 [dadatoa.github.io myapp]$ python3 -m venv myvenv
 ```
+
 Cela va créer un dossier *myvenv* (du nom que j'aurais donné à mon environnement *venv*) à la racine de mon projet qui va contenir tout ce qui est nécessaire pour définir et faire fonctionner mon envronnement de développement, notemment les packages installés via *pip* le seront localement dans ce repertoire.
 
 Pour activer mon environnement de développement:
