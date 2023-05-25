@@ -39,6 +39,7 @@ defaults:
       type: "docs"
     values:
       collection: "docs"
+      layout: "page"
   - 
     scope:
       path: ""
