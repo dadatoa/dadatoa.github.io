@@ -3,7 +3,7 @@ title: "Faire du rangement"
 slug: 2022-06-18-faire-du-rangement
 collection: _posts
 tags: [jekyll, github-pages]
-share: true
+
 ---
 
 Mon projet commence à grossir tranquillement. L'utilisation de plusieurs outils rend le repo un peu bordélique : y'a plein de fichiers qui n'ont rien à voir avec mon site Jekyll.

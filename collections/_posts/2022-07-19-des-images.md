@@ -1,9 +1,9 @@
 ---
-title: des images
+title: "des images"
 slug: 2022-07-19-des-images
 collection: _posts
 tags: []
-share: true
+
 update: 2023-03-09
 ---
 

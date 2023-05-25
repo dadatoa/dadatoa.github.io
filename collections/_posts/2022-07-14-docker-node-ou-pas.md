@@ -1,9 +1,9 @@
 ---
-title: Docker node... Ou pas?
+title: "Docker node... Ou pas?"
 slug: 2022-07-14-docker-node-ou-pas
 collection: _posts
 tags: [docker, gitpod]
-share: true
+
 ---
 
 J'envisage de me lancer dans l'apprentissage de Strapi et de Astro. Les deux projets sont basés sur NodeJS, et je me suis naturellement dit que ça serait pas mal de Dockeriser les applications. J'ai eu un peu de mal à trouver de la doc, donc j'ai décidé de tester ça moi même. 

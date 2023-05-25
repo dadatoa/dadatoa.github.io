@@ -1,17 +1,11 @@
 ---
-title: Mise à jour de la config Gitpod
+title: "Mise à jour de la config Gitpod"
 slug: 2022-06-20-mise-a-jour-de-ma-config-gitpod
 collection: _posts
 tags: [jekyll, gitpod, docker]
-share: true
+
 ---
 
-J'ai mis à jour mon Dockerfile Gitpod : ça me fait une image un peu moins lourde, toujours basée sur Debian, sauf que maintenant, je pars
-  d'une image Bookworm Slim."
-category: docs
-tags: null
-pubdate: 2022-06-20T10:05:50.944Z
-update: false
 layout: post
 ---
 Ça fait un peu plus de trucs à installer, mais je gagne un peu d'espace, et je résous au passage un problème que j'avais en local. En plus, ma nouvelle image me permet d'avoir la même configuration de *Jekyll* localement (et sur *Gitpod*) que sur *Github Pages*.
