@@ -33,6 +33,7 @@ defaults:
       type: "posts"
     values:
       collection: "blog"
+      layout: "post"
   - 
     scope:
       path: ""
@@ -40,12 +41,6 @@ defaults:
     values:
       collection: "docs"
       layout: "page"
-  - 
-    scope:
-      path: ""
-      type: "projets"
-    values:
-      collection: "projets"
   -
     scope:
       path: "" # an empty string here means all files in the project
