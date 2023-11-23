@@ -1,9 +1,9 @@
 services:
   jekyll:
-    image: dadatoa/ruby:2-alpine
+    build: .
+    container_name: jekyll
     working_dir: /srv/jekyll
     volumes:
       - .:/srv/jekyll
     ports:
       - "4000:4000"
-    entrypoint: ["bundle", "install"]

@@ -9,7 +9,8 @@
     },
     "run" : {
       "enabled" : true,
-      "script" : "bundle exec jekyll serve --watch --increment"
+      "script" : "docker compose run jekyll bundle exec jekyll serve --watch --increment",
+      "shell" : "\/bin\/bash"
     }
   },
   "openLogOnRun" : "start"
