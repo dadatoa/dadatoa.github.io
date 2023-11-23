@@ -13,6 +13,8 @@ J'ai un objectif de relative simplicité et de possibilité d'évolution futures
 - je souhaite pouvoir utiliser des wikilinks pour les liens internes, il y a un plugin en cours de développement ([là](https://github.com/manunamz/jekyll-wikilinks)) mais il n'est pas intégré à la liste de plugin supporté par Github Pages, je vais donc utiliser la méthode qui consiste à implémenter la conversion des wikilinks directement dans les templates liquid d'après [ce projet](https://github.com/jhvanderschee/brackettest)
 - pour le css, Jekyll intègre par défaut la gestion de _sass_. Néamoins, avec les dernières avancées de css, et notemment l'ajout des variables, _sass_ n'est plus aussi intéressant qu'avant. du coup je vais m'en passer et utiliser du css classique pour ce projet. J'aurais bien testé _post-css_ maisune nouvelle fois, le plugin n'est pas supporté par Github Pages.
 
-## Dev local
+## Developpement
 
-Github Pages utilise des [versions anciennes](https://pages.github.com/versions/) des applications, notamment en ce qui concerne Ruby et Jekyll lui-même. Pour ne pas avoir à gérer d'éventuels conflits avec d'autres projets et applications en local, je vais utiliser un conteneur Docker pour mon application en local.
+### Environnement local
+
+Github Pages utilise des [versions anciennes](https://pages.github.com/versions/) des applications, notamment en ce qui concerne Ruby et Jekyll. Pour ne pas avoir à gérer d'éventuels conflits avec d'autres projets et applications en local, je vais utiliser un conteneur Docker pour mon application en local.
