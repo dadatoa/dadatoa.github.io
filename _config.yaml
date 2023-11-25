@@ -1,11 +1,12 @@
 title: dadatoa.github.io
 plugins:
-  - jekyll-seo-tag 
-  - jemoji 
-  #- jekyll-github-metadata 
-  #- jekyll-avatar 
+  - jekyll-seo-tag
+  - jemoji
+  #- jekyll-github-metadata
+  #- jekyll-avatar
   #- jekyll-remote-theme
   #- jekyll-mentions
-  #- jekyll-include-cache 
-  - jekyll-readme-index 
-  - jekyll-optional-front-matter 
+  #- jekyll-include-cache
+  - jekyll-readme-index
+  - jekyll-optional-front-matter
+ignore: ["Dockerfile", "docker-compose.yaml", "entrypoint.sh"]
