@@ -2,14 +2,15 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "bundle install && bundle exec jekyll build"
+      "script" : ".\/scripts\/ghp-build.sh"
     },
     "clean" : {
       "enabled" : true
     },
     "run" : {
       "enabled" : true,
-      "script" : "bundle exec jekyll serve --watch --increment"
+      "script" : "docker compose run jekyll bundle exec jekyll serve --watch --increment",
+      "shell" : "\/bin\/bash"
     }
   },
   "openLogOnRun" : "start"

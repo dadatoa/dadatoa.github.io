@@ -1,9 +1,9 @@
-_site/
-.sass-cache/
-.jekyll-cache/
+_site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
 .gitmodules
-vendor/
+vendor
 .Ds_Store
-**/Ds_Store
-.obsidian/
+.obsidian
+Gemfile.lock
