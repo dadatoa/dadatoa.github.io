@@ -2,14 +2,14 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : ".\/scripts\/ghp-build.sh"
+      "script" : "okteto up"
     },
     "clean" : {
       "enabled" : true
     },
     "run" : {
       "enabled" : true,
-      "script" : "docker compose run jekyll bundle exec jekyll serve --watch --increment",
+      "script" : "okteto up",
       "shell" : "\/bin\/bash"
     }
   },

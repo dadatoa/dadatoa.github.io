@@ -1,0 +1,10 @@
+build:
+  jekyll:
+    context: .
+dev:
+  jekyll:
+    sync:
+      - .:/srv/jekyll
+    forward:
+      - "4000:4000"
+    command: bundle install && jekyll serve
